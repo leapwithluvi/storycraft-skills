@@ -106,11 +106,11 @@ If the novel uses multiple perspective characters:
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The "Coffee and Chat" Chapter**: Two characters sitting comfortably discussing plot events that happened off-screen without any in-room interpersonal conflict or subtext.
-- ❌ **The Weather & Waking Start**: Beginning the chapter with the protagonist waking up, groaning at the sun, brushing their teeth, or contemplating the autumn breeze.
-- ❌ **The Reset Button**: Ending the chapter exactly where it began, with no change in information, relationships, or physical danger.
-- ❌ **The Head-Hopper**: Shifting from Character A's thoughts to Character B's thoughts in the middle of a paragraph.
-- ❌ **The False Cliffhanger**: Ending with "Someone tapped her shoulder!" only for the next chapter to reveal it was just her friendly dog.
+- **The "Coffee and Chat" Chapter**: Two characters sitting comfortably discussing plot events that happened off-screen without any in-room interpersonal conflict or subtext.
+- **The Weather & Waking Start**: Beginning the chapter with the protagonist waking up, groaning at the sun, brushing their teeth, or contemplating the autumn breeze.
+- **The Reset Button**: Ending the chapter exactly where it began, with no change in information, relationships, or physical danger.
+- **The Head-Hopper**: Shifting from Character A's thoughts to Character B's thoughts in the middle of a paragraph.
+- **The False Cliffhanger**: Ending with "Someone tapped her shoulder!" only for the next chapter to reveal it was just her friendly dog.
 
 ## Concrete Examples (Before vs. After Craft Application)
 

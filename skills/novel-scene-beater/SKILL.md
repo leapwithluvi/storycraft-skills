@@ -100,11 +100,11 @@ Even during quiet scenes, tension must hum beneath the surface:
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The "Chit-Chat Warmup"**: Opening scenes with polite greetings ("Good morning, Lord Vance," "Good morning to you, Captain. Lovely weather today, isn't it?").
-- ❌ **The Frictionless Success**: The protagonist attempts a difficult action, succeeds on the first try, and walks away smiling with no complication.
-- ❌ **The Head-Bobbing Echo**: Characters endlessly nodding, grinning, chuckling, or murmuring "indeed" in agreement rather than contesting conversational dominance.
-- ❌ **The Floating White Room**: Scenes where characters speak pages of dialogue without interacting with physical props, furniture, terrain, or somatic sensations.
-- ❌ **Over-stayed Welcome**: Continuing the scene for three paragraphs after the climax to show characters tidying up, walking to their cars, or having a debrief that repeats what just happened.
+- **The "Chit-Chat Warmup"**: Opening scenes with polite greetings ("Good morning, Lord Vance," "Good morning to you, Captain. Lovely weather today, isn't it?").
+- **The Frictionless Success**: The protagonist attempts a difficult action, succeeds on the first try, and walks away smiling with no complication.
+- **The Head-Bobbing Echo**: Characters endlessly nodding, grinning, chuckling, or murmuring "indeed" in agreement rather than contesting conversational dominance.
+- **The Floating White Room**: Scenes where characters speak pages of dialogue without interacting with physical props, furniture, terrain, or somatic sensations.
+- **Over-stayed Welcome**: Continuing the scene for three paragraphs after the climax to show characters tidying up, walking to their cars, or having a debrief that repeats what just happened.
 
 ## Concrete Examples (Before vs. After Craft Application)
 

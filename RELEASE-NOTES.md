@@ -9,9 +9,8 @@ Initial release of StoryCraft Skills: a complete fiction writing methodology and
 - **21 Specialized Fiction Skills**: Complete literary pipeline spanning Stage 0 (Meta & Ideation) through Stage 6 (Continuity & Story Bible).
 - **Zero-Latency State Persistence**: Solves LLM context-window truncation and memory loss via `story-state.md` checkpoints and the Next Session Bootstrap Prompt.
 - **Autonomous Chapter Drafter**: Single and multi-chapter batch drafting engine (`novel-chapter-drafter`) that ingests project state and prior chapter files.
-- **Publishing Format Flexibility**: Native support for Webnovels (rapid pacing, 1,500w chapters, cliffhanger hooks), Traditional Commercial Novels (80k-100k words, 3-act structure), Light Novels, and Serial Fiction.
-- **Zero-Dependency CLI & Compiler**: `bin/storycraft.mjs` natively validates, tests, scaffolds, and exports all skills into platform-specific formats.
-- **Multi-Harness Plugin Architecture**: Pre-compiled distributions and manifests for Antigravity, Cursor, Claude Code, OpenAI Codex, Devin, Factory Droid, Gemini CLI, Grok, Kimi Code, OpenCode, Pi, Qwen Code, Hermes Agent, and Muse.
+- **Zero-Dependency Validation Suite**: `scripts/validate-skills.mjs` and native Node.js tests verify all skills against strict literary craft standards with zero third-party dependencies.
+- **Multi-Harness Plugin Architecture**: Native manifests and configurations for Antigravity, Cursor, Claude Code, OpenAI Codex, Devin, Factory Droid, Gemini CLI, Grok, Kimi Code, OpenCode, Pi, Qwen Code, Hermes Agent, and Muse.
 
 ### Skills Included in v1.0.0
 

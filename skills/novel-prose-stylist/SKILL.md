@@ -111,11 +111,11 @@ A metaphor exists to startle the reader into seeing an ordinary object with fres
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The "Breath She Didn't Know She Held"**: The single most overused trope in modern commercial fiction. Immediate disqualification.
-- ❌ **The Triple Adjective Stack**: Piling on descriptors (*"The tall, ancient, decrepit, ominous tower"*). Pick the single most revelatory noun or image.
-- ❌ **The Incessant "Begun to"**: Writing *"He began to walk toward the gate"* instead of *"He walked toward the gate."* Unless an action is interrupted mid-motion, use simple past tense.
-- ❌ **Purple Thesaurus Disease**: Using obscure words like `crepuscular`, `coruscating`, `tintinnabulation`, or `susurration` just to sound literary, breaking the natural narrative flow.
-- ❌ **Repetitive Sentence Openers**: Starting five sentences in a row with `He [verb]`, `She [verb]`, `He [verb]`.
+- **The "Breath She Didn't Know She Held"**: The single most overused trope in modern commercial fiction. Immediate disqualification.
+- **The Triple Adjective Stack**: Piling on descriptors (*"The tall, ancient, decrepit, ominous tower"*). Pick the single most revelatory noun or image.
+- **The Incessant "Begun to"**: Writing *"He began to walk toward the gate"* instead of *"He walked toward the gate."* Unless an action is interrupted mid-motion, use simple past tense.
+- **Purple Thesaurus Disease**: Using obscure words like `crepuscular`, `coruscating`, `tintinnabulation`, or `susurration` just to sound literary, breaking the natural narrative flow.
+- **Repetitive Sentence Openers**: Starting five sentences in a row with `He [verb]`, `She [verb]`, `He [verb]`.
 
 ## Concrete Examples (Before vs. After Craft Application)
 

@@ -24,16 +24,5 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Validate SKILL.md Files
-        run: node bin/storycraft.mjs test
-
-      - name: Validate Multiplatform Sync
-        run: node bin/storycraft.mjs sync --target all
-
-      - name: Verify Git Cleanliness (Pre-compiled dist check)
-        run: |
-          git status --porcelain
-          if [ -n "$(git status --porcelain)" ]; then
-            echo "Pre-compiled dist files are out of sync with skills/. Run 'node bin/storycraft.mjs sync --target all' and commit."
-            exit 1
-          fi
+      - name: Validate SKILL.md Files & Craft Standards
+        run: npm test

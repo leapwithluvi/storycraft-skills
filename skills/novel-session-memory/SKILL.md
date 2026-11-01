@@ -111,11 +111,11 @@ Every creative skill in the StoryCraft catalog (`novel-scene-beater`, `novel-cha
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The Amnesiac Sign-Off**: Ending a writing session without updating `story-state.md`, leaving the next session completely blind to the work done.
-- ❌ **The Infinite Accumulator**: Appending every single past scene description into `story-state.md` until the file becomes 50,000 words long, defeating the entire purpose of context-window optimization.
-- ❌ **The Vague Bootstrap Prompt**: Generating a resume prompt like *"Let's continue writing the novel soon!"* instead of providing exact chapter, scene, POV, and immediate beat instructions.
-- ❌ **Desynchronized Inventories**: Forgetting to update character assets after an item is stolen or destroyed in the scene.
-- ❌ **The Hallucinated Word Count**: Leaving word counts blank or guessing wild numbers without verifying actual draft progress.
+- **The Amnesiac Sign-Off**: Ending a writing session without updating `story-state.md`, leaving the next session completely blind to the work done.
+- **The Infinite Accumulator**: Appending every single past scene description into `story-state.md` until the file becomes 50,000 words long, defeating the entire purpose of context-window optimization.
+- **The Vague Bootstrap Prompt**: Generating a resume prompt like *"Let's continue writing the novel soon!"* instead of providing exact chapter, scene, POV, and immediate beat instructions.
+- **Desynchronized Inventories**: Forgetting to update character assets after an item is stolen or destroyed in the scene.
+- **The Hallucinated Word Count**: Leaving word counts blank or guessing wild numbers without verifying actual draft progress.
 
 ## Concrete Examples (Before vs. After Craft Application)
 

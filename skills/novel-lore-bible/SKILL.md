@@ -100,11 +100,11 @@ When an author or agent drafts a scene that introduces a new fact (e.g., "Uncle 
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The Scattered Scrapbook**: Storing lore across five different files (`characters.txt`, `notes.doc`, `magic.md`, `places.json`), making unified agent retrieval impossible.
-- ❌ **The Decorative Trivia Trap**: Filling character profiles with useless trivia (favorite breakfast cereal, favorite color) while omitting their core Lie, Fatal Flaw, and driving Want.
-- ❌ **The Unbounded Magic System**: Writing "Magic is limited only by the caster's imagination," which immediately destroys stakes and invites endless plot holes.
-- ❌ **The Floating Timeline**: Events logged without relative day markers (e.g., "Then they traveled for a while, and later that month something happened"), leading to continuity collapse.
-- ❌ **The Dead Document**: Writing a story bible once during pre-production and never updating it as the manuscript evolves and discovers new canon during drafting.
+- **The Scattered Scrapbook**: Storing lore across five different files (`characters.txt`, `notes.doc`, `magic.md`, `places.json`), making unified agent retrieval impossible.
+- **The Decorative Trivia Trap**: Filling character profiles with useless trivia (favorite breakfast cereal, favorite color) while omitting their core Lie, Fatal Flaw, and driving Want.
+- **The Unbounded Magic System**: Writing "Magic is limited only by the caster's imagination," which immediately destroys stakes and invites endless plot holes.
+- **The Floating Timeline**: Events logged without relative day markers (e.g., "Then they traveled for a while, and later that month something happened"), leading to continuity collapse.
+- **The Dead Document**: Writing a story bible once during pre-production and never updating it as the manuscript evolves and discovers new canon during drafting.
 
 ## Concrete Examples (Before vs. After Craft Application)
 

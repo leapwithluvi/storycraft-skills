@@ -1,4 +1,4 @@
-# Contributing to StoryCraft Skills 🖋️
+# Contributing to StoryCraft Skills
 
 Thank you for your interest in contributing to **StoryCraft Skills**! Our mission is to build the world's most disciplined, craft-accurate, and multiplatform AI skill library for novelists and story architects.
 
@@ -6,40 +6,40 @@ Whether you are fixing a typo, refining an existing literary methodology, or aut
 
 ---
 
-## 🧭 Code of Conduct
+## Code of Conduct
 
 We are committed to providing a welcoming, constructive, and inclusive community for writers, narrative designers, and developers of all backgrounds. Please treat fellow contributors with kindness, empathy, and respect.
 
 ---
 
-## 🛠️ Development Setup
+## Development Setup
 
 StoryCraft Skills has **zero external runtime dependencies**. You only need [Node.js](https://nodejs.org/) (v18.0.0 or higher) and Git installed.
 
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/leapwithluvi/storycraft-skills.git
-   cd storycraft-skills
-   ```
+ ```bash
+ git clone https://github.com/leapwithluvi/storycraft-skills.git
+ cd storycraft-skills
+ ```
 2. **Verify installation:**
-   ```bash
-   node bin/storycraft.mjs list
-   ```
+ ```bash
+ node bin/storycraft.mjs list
+ ```
 3. **Run the test suite:**
-   ```bash
-   npm test
-   # or: node bin/storycraft.mjs test
-   ```
+ ```bash
+ npm test
+ # or: node bin/storycraft.mjs test
+ ```
 
 ---
 
-## 📐 Anatomical Standards for `SKILL.md`
+## Anatomical Standards for `SKILL.md`
 
 Every skill in StoryCraft resides in its own dedicated directory:
 ```
 skills/
 └── novel-<skill-name>/
-    └── SKILL.md
+ └── SKILL.md
 ```
 
 ### 1. YAML Frontmatter Requirements
@@ -75,7 +75,7 @@ To ensure consistency and high-level reasoning across all LLMs, every `SKILL.md`
 
 ---
 
-## 🚀 Creating a New Skill
+## Creating a New Skill
 
 Use the built-in CLI generator to scaffold a fully compliant skill template:
 
@@ -94,7 +94,7 @@ This creates `skills/novel-romance-rivalry/SKILL.md` populated with all required
 
 ---
 
-## 🗺️ Genre Expansion Roadmap
+## Genre Expansion Roadmap
 
 We actively welcome Pull Requests introducing specialized **Genre Expansion Packs**:
 
@@ -106,7 +106,7 @@ We actively welcome Pull Requests introducing specialized **Genre Expansion Pack
 
 ---
 
-## 🧪 Testing & Validation
+## Testing & Validation
 
 Before submitting a Pull Request, run the automated validator:
 
@@ -117,25 +117,19 @@ npm test
 The test runner will verify:
 - Valid YAML frontmatter and required metadata fields.
 - Presence of all 9 mandatory sections.
-- Body length adequacy (minimum 500 characters of substantive instructions).
-
-Next, run the sync engine to ensure pre-compiled distributions stay updated:
-
-```bash
-node bin/storycraft.mjs sync --target all
-```
+- Body length adequacy (minimum 80 lines of substantive craft instructions).
+- No placeholder or unfinished TODO tokens.
 
 ---
 
-## 📬 Pull Request Submission Checklist
+## Pull Request Submission Checklist
 
 - [ ] My skill directory follows the `skills/novel-<slug>/SKILL.md` naming convention.
 - [ ] Frontmatter contains valid `name`, `description`, `version`, `category`, `stage`, and `tags`.
 - [ ] All 9 mandatory sections are present and fully fleshed out with deep literary craft.
 - [ ] At least two concrete before-and-after craft examples are provided.
 - [ ] `npm test` passes with zero errors.
-- [ ] `node bin/storycraft.mjs sync --target all` was executed and the updated `dist/` files are included.
 - [ ] No extraneous dependencies or temporary build artifacts are included.
 - [ ] Commit messages follow the Conventional Commits specification (e.g., `feat(skills): add novel-romance-rivalry skill`).
 
-Thank you for helping writers craft unforgettable novels! 📖
+Thank you for helping writers craft unforgettable novels.

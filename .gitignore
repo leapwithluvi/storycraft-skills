@@ -7,6 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 .pnpm-store/
 
+# Git and worktree artifacts
+.worktrees/
+.private-journal/
+
 # Environment variables and local secrets
 .env
 .env.local
@@ -40,15 +44,20 @@ coverage/
 .nyc_output/
 *.lcov
 
-# Temporary build, cache, and scratch directories
+# Temporary build, cache, scratch, and evaluation directories
+dist/
 scratch/
 tmp/
 temp/
+evals/
+triage/
 *.tmp
 *.log
 .eslintcache
 .stylelintcache
 
-# Note on repository architecture:
-# - 'bin/' contains the zero-dependency CLI executable and is tracked.
-# - 'dist/' contains pre-compiled multiplatform exports for zero-tooling writers and is tracked.
+# Python (if running local test scripts or linters)
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/

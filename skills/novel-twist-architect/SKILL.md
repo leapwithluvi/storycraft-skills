@@ -103,11 +103,11 @@ The climax of the twist must hit both mind and circumstance simultaneously:
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The Cheating Narrator**: Third-person omniscient or first-person narrator deliberately lying to the reader about what they see or do (*"I looked in the mirror and felt nothing," when they are the killer*).
-- ❌ **The "It Was All in Their Head" Cop-Out**: Revealing that nothing in the story actually mattered because the protagonist was in a coma or asylum.
-- ❌ **The Instant Twin / Secret Brother**: Pulling an identical twin or unknown sibling out of nowhere in Chapter 30 to take the blame.
-- ❌ **The Unheralded Culprit**: Making the killer a random character who appeared once on page 12 to deliver a pizza.
-- ❌ **The Non-Functional Twist**: A twist that changes a piece of trivia but has zero impact on the characters' emotional arcs or survival stakes.
+- **The Cheating Narrator**: Third-person omniscient or first-person narrator deliberately lying to the reader about what they see or do (*"I looked in the mirror and felt nothing," when they are the killer*).
+- **The "It Was All in Their Head" Cop-Out**: Revealing that nothing in the story actually mattered because the protagonist was in a coma or asylum.
+- **The Instant Twin / Secret Brother**: Pulling an identical twin or unknown sibling out of nowhere in Chapter 30 to take the blame.
+- **The Unheralded Culprit**: Making the killer a random character who appeared once on page 12 to deliver a pizza.
+- **The Non-Functional Twist**: A twist that changes a piece of trivia but has zero impact on the characters' emotional arcs or survival stakes.
 
 ## Concrete Examples (Before vs. After Craft Application)
 

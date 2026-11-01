@@ -111,11 +111,11 @@ Human beings react to danger in a strict neurological hierarchy. Deep POV must f
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The Filter Word Crutch**: Writing "She saw the smoke rising," "He heard the gun fire," "She felt a tear roll down her cheek" on every page.
-- ❌ **The "Little Did He Know" Intrusion**: Author stepping in to tease future events the character cannot possibly anticipate (*"Little did Arthur know, this would be his last night alive"*).
-- ❌ **The External Self-Observation**: Describing the POV character's facial expression as if looking through a camera (*"A mysterious smile crept onto her lips as she looked cunningly at him"*). The character feels their cheeks tighten, not what they look like from the outside.
-- ❌ **The Clunky Italic Monologue**: Alternating every paragraph with two lines of italicized self-talk (*"Oh no, what do I do now?" she thought to herself*).
-- ❌ **Head-Hopping Smuggling**: Sneaking into another character's head mid-paragraph (*"Elena glared at Jack. Jack secretly admired her courage, but refused to back down"*).
+- **The Filter Word Crutch**: Writing "She saw the smoke rising," "He heard the gun fire," "She felt a tear roll down her cheek" on every page.
+- **The "Little Did He Know" Intrusion**: Author stepping in to tease future events the character cannot possibly anticipate (*"Little did Arthur know, this would be his last night alive"*).
+- **The External Self-Observation**: Describing the POV character's facial expression as if looking through a camera (*"A mysterious smile crept onto her lips as she looked cunningly at him"*). The character feels their cheeks tighten, not what they look like from the outside.
+- **The Clunky Italic Monologue**: Alternating every paragraph with two lines of italicized self-talk (*"Oh no, what do I do now?" she thought to herself*).
+- **Head-Hopping Smuggling**: Sneaking into another character's head mid-paragraph (*"Elena glared at Jack. Jack secretly admired her courage, but refused to back down"*).
 
 ## Concrete Examples (Before vs. After Craft Application)
 

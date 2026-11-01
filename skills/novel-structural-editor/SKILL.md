@@ -99,11 +99,11 @@ Roger Ebert coined "The Idiot Plot": Any plot that only moves forward because ev
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The "It Was All a Dream / Simulation" Cop-Out**: Erasing the emotional and physical consequences of the entire novel by invalidating its reality.
-- ❌ **The Idiot Plot**: Plot progression sustained entirely by intelligent characters refusing to make a simple phone call or verify basic facts.
-- ❌ **The Out-of-Nowhere Culprit**: In mysteries, revealing the murderer to be a random stranger introduced on page 290 who had zero interaction with the protagonist.
-- ❌ **The Convenient Amnesia / Power Surge**: Characters conveniently forgetting they possess a spell or tool that would instantly solve their current predicament, or unlocking an unearned super-ability at the exact moment of defeat.
-- ❌ **The Dangling Subplot**: Introducing a beloved companion's missing sister or an impending audit in Act 1, only to never mention it again for the rest of the book.
+- **The "It Was All a Dream / Simulation" Cop-Out**: Erasing the emotional and physical consequences of the entire novel by invalidating its reality.
+- **The Idiot Plot**: Plot progression sustained entirely by intelligent characters refusing to make a simple phone call or verify basic facts.
+- **The Out-of-Nowhere Culprit**: In mysteries, revealing the murderer to be a random stranger introduced on page 290 who had zero interaction with the protagonist.
+- **The Convenient Amnesia / Power Surge**: Characters conveniently forgetting they possess a spell or tool that would instantly solve their current predicament, or unlocking an unearned super-ability at the exact moment of defeat.
+- **The Dangling Subplot**: Introducing a beloved companion's missing sister or an impending audit in Act 1, only to never mention it again for the rest of the book.
 
 ## Concrete Examples (Before vs. After Craft Application)
 

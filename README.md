@@ -80,11 +80,11 @@ StoryCraft is available via the Claude Code plugin ecosystem.
   /plugin install storycraft@storycraft-marketplace
   ```
 
-- Alternatively, copy the pre-compiled instructions directly into your workspace:
+- Alternatively, copy the instructions directly into your workspace:
 
   ```bash
-  cp dist/CLAUDE.md ./CLAUDE.md
-  cp -r dist/.claude ./.claude
+  cp CLAUDE.md ./CLAUDE.md
+  cp -r skills/ ./skills/
   ```
 
 ### Antigravity
@@ -97,13 +97,14 @@ agy plugin install https://github.com/leapwithluvi/storycraft-skills
 
 Antigravity lists each installed skill's description, and the description of the `using-storycraft` skill prompts the model to load that skill at the start of a conversation. Reinstall with the same command to update.
 
-Alternatively, copy the pre-compiled `.agents/` folder into your novel project root:
+Alternatively, copy the skills directly into your novel project's `.agents/skills` folder:
 
 ```bash
-cp -r dist/.agents /path/to/your/novel-project/
+mkdir -p /path/to/your/novel-project/.agents/skills
+cp -r skills/* /path/to/your/novel-project/.agents/skills/
 ```
 
-All 20 skills are immediately available via native chat slash commands (e.g. `/using-storycraft`, `/novel-brainstorming`, `/novel-chapter-drafter`).
+All 21 skills are immediately available via native chat slash commands (e.g. `/using-storycraft`, `/novel-brainstorming`, `/novel-chapter-drafter`).
 
 ### Codex App
 
@@ -131,7 +132,7 @@ StoryCraft is available for the Codex CLI.
 
 - Select `Install Plugin`.
 
-- Alternatively, copy `dist/AGENTS.md` and `dist/codex/` into your project root.
+- Alternatively, copy `AGENTS.md` and `skills/` into your project root.
 
 ### Cursor
 
@@ -141,13 +142,14 @@ StoryCraft is available for the Codex CLI.
   /add-plugin storycraft
   ```
 
-- Or copy the pre-compiled rules into your novel project:
+- Or copy `AGENTS.md` and `skills/` into your novel project:
 
   ```bash
-  cp -r dist/.cursor /path/to/your/novel-project/
+  cp AGENTS.md /path/to/your/novel-project/
+  cp -r skills/ /path/to/your/novel-project/skills/
   ```
 
-Cursor Agent automatically applies all 20 `.cursor/rules/*.mdc` rules during your writing sessions.
+Cursor Agent automatically applies all 21 skills during your writing sessions.
 
 ### Devin CLI
 

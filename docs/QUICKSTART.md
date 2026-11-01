@@ -31,9 +31,10 @@ Install as a plugin:
 ```bash
 agy plugin install https://github.com/leapwithluvi/storycraft-skills
 ```
-Or copy the pre-compiled `.agents/` folder into your novel workspace:
+Or copy skills into your novel workspace's `.agents/skills`:
 ```bash
-cp -r path/to/storycraft-skills/dist/.agents ./
+mkdir -p .agents/skills
+cp -r path/to/storycraft-skills/skills/* .agents/skills/
 ```
 In your Antigravity chat, all skills are immediately available via slash commands:
 - `/using-storycraft`
@@ -43,16 +44,25 @@ In your Antigravity chat, all skills are immediately available via slash command
 - `/novel-session-memory`
 
 ### For Cursor
-Copy the `.cursor/` rules:
+Copy `AGENTS.md` and `skills/` into your novel project:
 ```bash
-cp -r path/to/storycraft-skills/dist/.cursor ./
+cp path/to/storycraft-skills/AGENTS.md ./
+cp -r path/to/storycraft-skills/skills ./
 ```
 
 ### For Claude (Desktop or Web Projects)
-Copy `CLAUDE.md` and `.claude/` into your project directory.
+Copy `CLAUDE.md` and `skills/` into your project directory:
+```bash
+cp path/to/storycraft-skills/CLAUDE.md ./
+cp -r path/to/storycraft-skills/skills ./
+```
 
 ### For OpenAI Codex and OpenCode
-Copy `AGENTS.md` and `dist/codex/` into your project directory.
+Copy `AGENTS.md` and `skills/` into your project directory:
+```bash
+cp path/to/storycraft-skills/AGENTS.md ./
+cp -r path/to/storycraft-skills/skills ./
+```
 
 ---
 

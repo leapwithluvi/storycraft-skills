@@ -123,11 +123,11 @@ Pinch Points exist to keep the antagonist relevant while the protagonist pursues
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The "And Then" Disease**: Episodic plots where things happen in sequence without causal linkage ("First they went to the cave, and then they met a dwarf, and then a monster attacked").
-- ❌ **The Convenient Rescue (Deus Ex Machina)**: A third party, miraculous superpower, or sudden storm arriving to resolve a situation the protagonist could not think their way out of.
-- ❌ **The Fake Dark Night of the Soul**: The protagonist pouts for one scene about a minor setback, only to instantly bounce back without confronting their flaw.
-- ❌ **The Passive Midpoint**: Halfway through the book, the protagonist is still waiting for villains to attack them instead of taking initiative.
-- ❌ **The Subplot Abandonment**: Introducing romance or mystery subplots in Act 1 that vanish completely in Act 3 without payoff.
+- **The "And Then" Disease**: Episodic plots where things happen in sequence without causal linkage ("First they went to the cave, and then they met a dwarf, and then a monster attacked").
+- **The Convenient Rescue (Deus Ex Machina)**: A third party, miraculous superpower, or sudden storm arriving to resolve a situation the protagonist could not think their way out of.
+- **The Fake Dark Night of the Soul**: The protagonist pouts for one scene about a minor setback, only to instantly bounce back without confronting their flaw.
+- **The Passive Midpoint**: Halfway through the book, the protagonist is still waiting for villains to attack them instead of taking initiative.
+- **The Subplot Abandonment**: Introducing romance or mystery subplots in Act 1 that vanish completely in Act 3 without payoff.
 
 ## Concrete Examples (Before vs. After Craft Application)
 

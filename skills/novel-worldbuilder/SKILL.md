@@ -110,11 +110,11 @@ A great setting is never a passive backdrop. It:
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The "As You Know, Bob" Exposition**: Characters telling each other world lore they would both already know just to inform the reader.
-- ❌ **The Encyclopedic Chapter 1 Prologue**: Beginning with 3 pages of ancient creation mythology or kingdom history before any character breathes.
-- ❌ **The Monolithic Culture**: Entire races or planets that share a single personality trait, clothing style, or political belief (e.g., "The Forest Elves are all serene nature lovers").
-- ❌ **Cost-Free Magic**: Spells or powers that exhaust nothing more than generic "mana" or vague tiredness, eliminating genuine physical stakes.
-- ❌ **Clean Hollywood Set Syndrome**: Streets with no manure, mud, trash, stray animals, graffiti, or bad smells.
+- **The "As You Know, Bob" Exposition**: Characters telling each other world lore they would both already know just to inform the reader.
+- **The Encyclopedic Chapter 1 Prologue**: Beginning with 3 pages of ancient creation mythology or kingdom history before any character breathes.
+- **The Monolithic Culture**: Entire races or planets that share a single personality trait, clothing style, or political belief (e.g., "The Forest Elves are all serene nature lovers").
+- **Cost-Free Magic**: Spells or powers that exhaust nothing more than generic "mana" or vague tiredness, eliminating genuine physical stakes.
+- **Clean Hollywood Set Syndrome**: Streets with no manure, mud, trash, stray animals, graffiti, or bad smells.
 
 ## Concrete Examples (Before vs. After Craft Application)
 

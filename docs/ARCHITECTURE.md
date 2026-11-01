@@ -1,102 +1,100 @@
-# StoryCraft Skills — System Architecture 🏛️
+# StoryCraft Skills — Technical Architecture & Design
 
-This document describes the architectural philosophy, data flow, compilation engine, and state management mechanisms underlying **StoryCraft Skills**.
-
----
-
-## 1. Architectural Philosophy
-
-StoryCraft Skills operates on four foundational architectural principles:
-
-1. **Single Source of Truth (SSOT)**: Every skill is authored exactly once in standard Markdown with YAML frontmatter at `skills/<skill-name>/SKILL.md`. All platform-specific targets (`.cursor/rules/*.mdc`, `.claude/rules/*.md`, `CLAUDE.md`, `AGENTS.md`, `.agents/skills/*`, `.agents/workflows/*`) are compiled artifacts derived from this single source.
-2. **Zero Runtime Dependencies**: The CLI engine (`bin/storycraft.mjs`) relies exclusively on Node.js native standard libraries (`node:fs`, `node:path`, `node:process`). It requires no compilation step, no external npm packages, and runs instantly on Linux, macOS, and Windows.
-3. **Decoupled State Machine**: Narrative state (`story-state.md`) is completely separated from canonical world rules (`story-bible.md`) to optimize token window consumption during AI reasoning.
-4. **Platform Agnostic & Interoperable**: By generating standards-compliant markdown rules and workflow slash commands, StoryCraft runs interchangeably across Antigravity, Cursor, Claude, OpenAI Codex, and local open-source harnesses.
+This document details the internal design, directory layout, multiplatform compatibility, and operational protocols of StoryCraft Skills.
 
 ---
 
-## 2. Directory Layout & Repository Structure
+## 1. Design Philosophy
 
-```
+StoryCraft Skills follows four immutable architectural pillars modeled after elite agent frameworks like `obra/superpowers`:
+
+1. **Pure Markdown Source of Truth**: All agent intelligence resides directly in human-readable, deterministic markdown files (`skills/*/SKILL.md`).
+2. **Zero Runtime Dependencies**: The skill suite operates without requiring external runtime dependencies, ensuring high portability across environments.
+3. **Multiplatform Native Compatibility**: Out-of-the-box support for Antigravity, Claude Code, Cursor, Codex, OpenCode, Gemini, Devin, Pi, and beyond.
+4. **Clean Workspace Organization**: Author workspaces maintain a strictly defined folder convention (`docs/storycraft/` for story planning, `manuscript/` for chapters, and root state files).
+
+---
+
+## 2. Directory Structure
+
+```text
 storycraft-skills/
-├── .github/
-│   └── workflows/
-│       └── ci.yml               # Automated test & build validation
-├── bin/
-│   └── storycraft.mjs           # Zero-dependency CLI & multiplatform sync engine
-├── docs/
-│   ├── superpowers/
-│   │   ├── specs/               # Architectural & literary design specs
-│   │   └── plans/               # Implementation execution plans
-│   ├── QUICKSTART.md            # User-friendly guide for writers
-│   └── ARCHITECTURE.md          # Internal system architecture
-├── skills/                      # The 15 canonical skills (Single Source of Truth)
-│   ├── novel-session-memory/
-│   ├── novel-premise-hook/
-│   ├── novel-worldbuilder/
-│   ├── novel-character-architect/
-│   ├── novel-plot-architect/
+├── .agents/plugins/             # Antigravity agent plugin manifests
+├── .antigravity-plugin/         # Antigravity plugin manifest (plugin.json)
+├── .claude-plugin/              # Claude Code plugin manifest (plugin.json)
+├── .codex-plugin/               # OpenAI Codex marketplace manifest (manifest.json)
+├── .cursor-plugin/              # Cursor marketplace manifest (plugin.json)
+├── .devin-plugin/               # Devin plugin manifest
+├── .hermes-plugin/              # Hermes plugin manifest
+├── .kimi-plugin/                # Kimi plugin manifest
+├── .muse-plugin/                # Muse plugin manifest
+├── .opencode/                   # OpenCode installation and extension configs
+├── .pi/                         # Pi extension package
+├── docs/                        # Architecture, quickstart, and design specs
+├── scripts/                     # Developer utilities (validate-skills.mjs, bump-version.sh)
+├── tests/                       # Automated validation and verification test suite
+├── skills/                      # 21 Canonical Skills (Single Source of Truth)
+│   ├── novel-brainstorming/
+│   ├── novel-chapter-drafter/
 │   ├── novel-chapter-outline/
-│   ├── novel-scene-beater/
-│   ├── novel-sensory-immersion/
+│   ├── novel-character-architect/
+│   ├── novel-continuity-checker/
 │   ├── novel-deep-pov/
 │   ├── novel-dialogue-subtext/
-│   ├── novel-prose-stylist/
+│   ├── novel-genre-specialist/
+│   ├── novel-lore-bible/
+│   ├── novel-market-analyst/
 │   ├── novel-pacing-doctor/
+│   ├── novel-plot-architect/
+│   ├── novel-premise-hook/
+│   ├── novel-prose-stylist/
+│   ├── novel-scene-beater/
+│   ├── novel-sensory-immersion/
+│   ├── novel-session-memory/
 │   ├── novel-structural-editor/
-│   ├── novel-continuity-checker/
-│   └── novel-lore-bible/
-├── dist/                        # Pre-compiled multiplatform exports
-│   ├── .agents/                 # Antigravity skills & slash-command workflows
-│   ├── .cursor/rules/           # Cursor rules (*.mdc)
-│   ├── .claude/rules/           # Claude project rules + root CLAUDE.md
-│   └── codex/                   # Codex markdown files + root AGENTS.md
+│   ├── novel-twist-architect/
+│   ├── novel-worldbuilder/
+│   └── using-storycraft/
 ├── templates/                   # Scaffolding templates for authors
 │   ├── story-state.template.md
-│   └── story-bible.template.md
+│   ├── story-bible.template.md
+│   └── chapter.template.md
+├── AGENTS.md                    # Universal agent instruction manifest
+├── CLAUDE.md                    # Anthropic Claude instruction manifest
+├── GEMINI.md                    # Google Gemini & Antigravity instruction manifest
+├── CODE_OF_CONDUCT.md           # Contributor Covenant
 ├── CONTRIBUTING.md              # Community contribution guidelines
 ├── LICENSE                      # MIT License
-├── package.json                 # CLI metadata, npm scripts & binary configuration
+├── package.json                 # Package manifest, metadata, test scripts
 └── README.md                    # Rich project showcase
 ```
 
 ---
 
-## 3. The Compilation Engine (`bin/storycraft.mjs`)
+## 3. Standard Author Workspace Layout
 
-The CLI engine operates via a linear compilation pipeline:
+When authors initialize a novel project using StoryCraft, skills generate and maintain a clean folder structure:
 
-```mermaid
-graph TD
-    A["skills/*/SKILL.md (Source)"] --> B["parseFrontmatter()"]
-    B --> C["Parsed AST Object (meta, body, sections)"]
-    C --> D{"Target Selector"}
-    D -->|Cursor| E[".cursor/rules/*.mdc"]
-    D -->|Claude| F["CLAUDE.md + .claude/rules/*.md"]
-    D -->|Codex| G["AGENTS.md + codex/*.md"]
-    D -->|Antigravity| H[".agents/skills/* + .agents/workflows/*"]
+```text
+my-novel/
+├── story-state.md                # Fast operational state (< 500 tokens active context)
+├── story-bible.md                # Canonical lore, world rules, dossiers, and timeline
+├── docs/
+│   └── storycraft/
+│       ├── pitch-brief.md        # Generated by novel-brainstorming
+│       ├── market-analysis.md    # Generated by novel-market-analyst
+│       ├── plot-architecture.md  # Generated by novel-plot-architect
+│       ├── twist-matrix.md       # Generated by novel-twist-architect
+│       ├── chapter-roadmaps.md   # Generated by novel-chapter-outline
+│       └── audits/
+│           ├── structural-audit.md  # Generated by novel-structural-editor
+│           ├── pacing-audit.md      # Generated by novel-pacing-doctor
+│           └── continuity-audit-ch*.md # Generated by novel-continuity-checker
+└── manuscript/
+    ├── chapter-01.md             # Drafted by novel-chapter-drafter & novel-scene-beater
+    ├── chapter-02.md
+    └── chapter-*.md
 ```
-
-### Compiler Targets:
-
-1. **Antigravity (`syncToAntigravity`)**:
-   - Emits `.agents/skills/<name>/SKILL.md` for native Antigravity skill discovery.
-   - Emits `.agents/workflows/<name>.md` enabling instant chat slash-command invocation (`/<skill-name>`).
-2. **Cursor (`syncToCursor`)**:
-   - Emits `.cursor/rules/<name>.mdc` with frontmatter:
-     ```yaml
-     ---
-     description: "..."
-     globs:
-     alwaysApply: false
-     ---
-     ```
-3. **Claude (`syncToClaude`)**:
-   - Emits individual rules in `.claude/rules/<name>.md`.
-   - Generates aggregated root `CLAUDE.md` organizing the 15 skills by stage.
-4. **Codex / OpenCode (`syncToCodex`)**:
-   - Emits standalone rules in `dist/codex/<name>.md`.
-   - Generates aggregated `AGENTS.md`.
 
 ---
 
@@ -122,13 +120,22 @@ StoryCraft solves this through a dual-file state persistence architecture:
   │ - Current POV Character  │  │ - Character Dossiers   │
   │ - Somatic Injuries       │  │ - Master Timeline      │
   │ - Inventory Changes      │  │ - Faction Lore         │
-  │ - Next Bootstrap Prompt  │  │ - Sensory Anchors      │
+  │ - Target Format & Words  │  │ - Sensory Anchors      │
+  │ - Next Bootstrap Prompt  │  │ - Thematic Polarities  │
   └──────────────────────────┘  └────────────────────────┘
 ```
 
-### Next Session Bootstrap Mechanics
-When a session concludes, `novel-session-memory` extracts the delta and formats a deterministic resume prompt:
+1. **`story-state.md`**: Kept under 500 tokens. Read at every turn. Contains active chapter number, current POV, somatic injuries, inventory changes, and the Next Session Bootstrap Prompt.
+2. **`story-bible.md`**: Consulted on demand when world rules, character dossiers, timelines, or magic systems need verification.
 
-$$\text{Bootstrap} = f(\text{NovelTitle}, \text{Chapter}, \text{Scene}, \text{POV}, \text{ImmediateDisaster}, \text{NextBeat})$$
+---
 
-This produces an immutable prompt that any LLM can ingest to resume drafting immediately without conversational warmup or amnesia.
+## 5. Verification & Testing
+
+Every skill undergoes automated validation via `npm test` or `./tests/run-validation.sh`:
+- Validates opening/closing YAML frontmatter delimiters.
+- Verifies `name` and `description` properties.
+- Checks presence of all 9 canonical sections.
+- Enforces depth and substance (must exceed 80 lines).
+- Confirms zero placeholder slop.
+- Validates repository cleanliness (no tracked build artifacts).

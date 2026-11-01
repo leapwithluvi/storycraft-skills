@@ -100,11 +100,11 @@ When pacing drags, inject one of three temporal pressure mechanisms:
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The Act 2 Slog (Camping in the Woods)**: Characters wandering aimlessly, camping, sharing lore around a fire, or having circular arguments because the plot has nowhere to go until the climax.
-- ❌ **The Inverted Pyramid**: Spending 10,000 words describing the preparation for a battle and 400 words on the battle itself.
-- ❌ **The Frictionless Fast-Forward**: Writing "Suddenly, five years passed and everything was fine," discarding narrative momentum and character bonds without emotional weight.
-- ❌ **The False Urgency (Sprint without Stakes)**: Characters running, shouting, and driving fast when nothing of genuine consequence is lost if they stop.
-- ❌ **The Climax Deflation**: The main villain being defeated by a single lucky punch or sudden realization in the first thirty seconds of confrontation.
+- **The Act 2 Slog (Camping in the Woods)**: Characters wandering aimlessly, camping, sharing lore around a fire, or having circular arguments because the plot has nowhere to go until the climax.
+- **The Inverted Pyramid**: Spending 10,000 words describing the preparation for a battle and 400 words on the battle itself.
+- **The Frictionless Fast-Forward**: Writing "Suddenly, five years passed and everything was fine," discarding narrative momentum and character bonds without emotional weight.
+- **The False Urgency (Sprint without Stakes)**: Characters running, shouting, and driving fast when nothing of genuine consequence is lost if they stop.
+- **The Climax Deflation**: The main villain being defeated by a single lucky punch or sudden realization in the first thirty seconds of confrontation.
 
 ## Concrete Examples (Before vs. After Craft Application)
 

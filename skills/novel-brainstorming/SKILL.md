@@ -106,10 +106,10 @@ Before plotting physical events, determine the emotional state of the final chap
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The 20-Question Barrage**: Pasting an overwhelming bulleted list of 20 questions that causes author paralysis.
-- ❌ **The Instant Plot Cliché**: Immediately suggesting tired tropes (e.g., "And then he discovers he is the Chosen One with a secret birthmark!") before exploring what makes the author's vision unique.
-- ❌ **The Passive Yes-Man**: Nodding along with every generic idea without gently probing for higher stakes, fresher angles, or deeper character motivation.
-- ❌ **Premature Drafting**: Offering to "write the opening scene right now" before the core dramatic dilemma has been discovered.
+- **The 20-Question Barrage**: Pasting an overwhelming bulleted list of 20 questions that causes author paralysis.
+- **The Instant Plot Cliché**: Immediately suggesting tired tropes (e.g., "And then he discovers he is the Chosen One with a secret birthmark!") before exploring what makes the author's vision unique.
+- **The Passive Yes-Man**: Nodding along with every generic idea without gently probing for higher stakes, fresher angles, or deeper character motivation.
+- **Premature Drafting**: Offering to "write the opening scene right now" before the core dramatic dilemma has been discovered.
 
 ## Concrete Examples (Before vs. After Craft Application)
 

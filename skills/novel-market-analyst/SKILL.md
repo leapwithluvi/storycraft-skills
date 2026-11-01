@@ -133,10 +133,10 @@ When connected to web search or browser capabilities, the agent executes targete
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The Universal 100k Novel Assumption**: Assuming every book must be an 80k-word physical paperback, ignoring the massive digital webnovel and serialized markets.
-- ❌ **The Platform Mismatch**: Recommending Royal Road for a slow-burn billionaire domestic romance, or recommending KBM App for hard sci-fi space opera.
-- ❌ **The Frictionless Success Fantasy**: Telling an author they will become rich instantly without explaining the rigorous release schedule and retention math required on digital platforms.
-- ❌ **Ignoring Reader Comment Dynamics**: On serial platforms (Royal Road, Wattpad), readers comment on every paragraph; ignoring this social reading dynamic leads to alienating prose styles.
+- **The Universal 100k Novel Assumption**: Assuming every book must be an 80k-word physical paperback, ignoring the massive digital webnovel and serialized markets.
+- **The Platform Mismatch**: Recommending Royal Road for a slow-burn billionaire domestic romance, or recommending KBM App for hard sci-fi space opera.
+- **The Frictionless Success Fantasy**: Telling an author they will become rich instantly without explaining the rigorous release schedule and retention math required on digital platforms.
+- **Ignoring Reader Comment Dynamics**: On serial platforms (Royal Road, Wattpad), readers comment on every paragraph; ignoring this social reading dynamic leads to alienating prose styles.
 
 ## Concrete Examples (Before vs. After Craft Application)
 

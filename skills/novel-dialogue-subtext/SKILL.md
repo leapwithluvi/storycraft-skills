@@ -104,11 +104,11 @@ Adverbs attached to dialogue tags (`he said angrily`, `she said sarcastically`) 
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The As-You-Know-Bob Infodump**: Characters recounting their own shared history or plot facts just to educate the reader (*"As you know, Marcus, ever since our father died five years ago in the Great War of the North..."*).
-- ❌ **The Dialogue Adverb Explosion**: Relying on adverbs like `vehemently`, `plaintively`, `menacingly`, `wryly`, or `scornfully` after `said`.
-- ❌ **The Perfectly Articulate Debater**: Every character having an immediate, witty, Oscar Wilde-level comeback without pausing, stammering, deflecting, or interrupting.
-- ❌ **The Melodramatic Soap Opera Confession**: Characters giving grand speeches confessing their childhood trauma while in the middle of a tactical firefight or casual lunch.
-- ❌ **The Floating Dialogue Void**: Pages of quotes with zero action beats, leaving the reader unable to visualize where the characters are standing or what their bodies are doing.
+- **The As-You-Know-Bob Infodump**: Characters recounting their own shared history or plot facts just to educate the reader (*"As you know, Marcus, ever since our father died five years ago in the Great War of the North..."*).
+- **The Dialogue Adverb Explosion**: Relying on adverbs like `vehemently`, `plaintively`, `menacingly`, `wryly`, or `scornfully` after `said`.
+- **The Perfectly Articulate Debater**: Every character having an immediate, witty, Oscar Wilde-level comeback without pausing, stammering, deflecting, or interrupting.
+- **The Melodramatic Soap Opera Confession**: Characters giving grand speeches confessing their childhood trauma while in the middle of a tactical firefight or casual lunch.
+- **The Floating Dialogue Void**: Pages of quotes with zero action beats, leaving the reader unable to visualize where the characters are standing or what their bodies are doing.
 
 ## Concrete Examples (Before vs. After Craft Application)
 

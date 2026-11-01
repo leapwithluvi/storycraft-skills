@@ -94,7 +94,7 @@ In fiction, characters do not have video-game health bars that reset after a nig
 
 4. **Step 4: Generate Forensic Continuity Report**
    - Document all discrepancies using a standardized severity scale:
-     - 🔴 **Critical Breach**: Impossible physical action, resurrection of dead character, violation of core magic law.
+     -  **Critical Breach**: Impossible physical action, resurrection of dead character, violation of core magic law.
      - 🟡 **Moderate Discrepancy**: Forgotten injury, inventory teleportation, travel time error.
      - 🟢 **Minor Drift**: Eye color mismatch, slight clothing change without scene transition, imprecise date.
 
@@ -112,11 +112,11 @@ In fiction, characters do not have video-game health bars that reset after a nig
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The Magic Pockets Syndrome**: Characters producing rope, chalk, lockpicks, extra ammunition, or disguises that were never packed or purchased.
-- ❌ **The Wolverine Recovery**: A character getting stabbed in the thigh in Chapter 4 and sprinting across rooftops in Chapter 5 without a limp, bandage, or pain mention.
-- ❌ **The Shifting Eye Color**: Describing a character's "emerald green eyes" in Chapter 2, "piercing blue eyes" in Chapter 8, and "warm hazel gaze" in Chapter 15.
-- ❌ **The Teleporting Fleet / Horse**: Moving characters across a continent in two days when the map scale and technology require three weeks.
-- ❌ **The Free Spell**: A magic user casting their most powerful spell without suffering the nausea, blood loss, or fatigue established in the world rules.
+- **The Magic Pockets Syndrome**: Characters producing rope, chalk, lockpicks, extra ammunition, or disguises that were never packed or purchased.
+- **The Wolverine Recovery**: A character getting stabbed in the thigh in Chapter 4 and sprinting across rooftops in Chapter 5 without a limp, bandage, or pain mention.
+- **The Shifting Eye Color**: Describing a character's "emerald green eyes" in Chapter 2, "piercing blue eyes" in Chapter 8, and "warm hazel gaze" in Chapter 15.
+- **The Teleporting Fleet / Horse**: Moving characters across a continent in two days when the map scale and technology require three weeks.
+- **The Free Spell**: A magic user casting their most powerful spell without suffering the nausea, blood loss, or fatigue established in the world rules.
 
 ## Concrete Examples (Before vs. After Craft Application)
 
@@ -127,7 +127,7 @@ In fiction, characters do not have video-game health bars that reset after a nig
 > Marcus kicked open the iron hatch and pulled himself up into the attic using both hands. He drew his heavy broadsword with a flourish, holding it high in his left hand to deflect the assassin's throwing knives, then swung his shield with his right arm to bash the assassin into the chimney.
 
 **Forensic Audit Findings:**
-> 🔴 **CRITICAL CONTINUITY BREACH:**  
+>  **CRITICAL CONTINUITY BREACH:**  
 > - In Chapter 6 (two story days ago), Marcus had his left collarbone fractured by a warhammer blow from Captain Brandt. `story-state.md` specifically logs: *"Marcus: Left clavicle fractured, arm strapped to torso in sling; high fever."*  
 > - In Chapter 8, Marcus pulls himself through a hatch using "both hands," wields a broadsword single-handedly with his injured left arm, and engages in heavy athletic combat with zero pain, splints, or limitation.
 

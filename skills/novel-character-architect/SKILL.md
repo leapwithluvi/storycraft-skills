@@ -103,11 +103,11 @@ Never introduce a secondary character without giving them a thematic purpose rel
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The "Orphaned Badass" Syndrome**: Backstory consisting entirely of murdered parents with zero surviving family, debts, or social ties, creating an unmoored character with nothing to lose.
-- ❌ **The "Sympathy Pet" Trap**: Making a villain unredeemably sadistic while giving the hero a puppy to save, substituting cheap manipulation for moral complexity.
-- ❌ **The Flaw That Isn't a Flaw**: Giving characters "flaws" like "she's too clumsy" or "he cares too much about justice," which never force terrible, regrettable choices.
-- ❌ **The Uniform Voice**: All characters speaking in the author's polished, erudite, witty cadence with identical grammatical structures.
-- ❌ **Passive Observers**: Main characters who react to events, get rescued by side characters, and never initiate proactive schemes.
+- **The "Orphaned Badass" Syndrome**: Backstory consisting entirely of murdered parents with zero surviving family, debts, or social ties, creating an unmoored character with nothing to lose.
+- **The "Sympathy Pet" Trap**: Making a villain unredeemably sadistic while giving the hero a puppy to save, substituting cheap manipulation for moral complexity.
+- **The Flaw That Isn't a Flaw**: Giving characters "flaws" like "she's too clumsy" or "he cares too much about justice," which never force terrible, regrettable choices.
+- **The Uniform Voice**: All characters speaking in the author's polished, erudite, witty cadence with identical grammatical structures.
+- **Passive Observers**: Main characters who react to events, get rescued by side characters, and never initiate proactive schemes.
 
 ## Concrete Examples (Before vs. After Craft Application)
 

@@ -118,11 +118,11 @@ During drafting, the agent actively suppresses filter words (`saw`, `heard`, `fe
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The 500-Word "Summary Chapter"**: Generating a quick, superficial 500-word synopsis and calling it a "chapter." Real chapters require fully dramatized moments, beats, dialogue, and micro-actions.
-- ❌ **The Amnesiac Opening**: Starting Chapter 2 without any reference to the wounds, cliffhangers, or emotional shock that ended Chapter 1.
-- ❌ **The Floating White Room**: Writing long dialogue exchanges where characters float in undefined space without interacting with props or their physical environment.
-- ❌ **The Convenient Skip**: Writing *"A fierce battle ensued and they eventually won"* instead of choreographing the actual kinetic struggle beat by beat.
-- ❌ **The Head-Hopper**: Jumping into a secondary character's thoughts mid-scene when the chapter was assigned to a single Deep POV character.
+- **The 500-Word "Summary Chapter"**: Generating a quick, superficial 500-word synopsis and calling it a "chapter." Real chapters require fully dramatized moments, beats, dialogue, and micro-actions.
+- **The Amnesiac Opening**: Starting Chapter 2 without any reference to the wounds, cliffhangers, or emotional shock that ended Chapter 1.
+- **The Floating White Room**: Writing long dialogue exchanges where characters float in undefined space without interacting with props or their physical environment.
+- **The Convenient Skip**: Writing *"A fierce battle ensued and they eventually won"* instead of choreographing the actual kinetic struggle beat by beat.
+- **The Head-Hopper**: Jumping into a secondary character's thoughts mid-scene when the chapter was assigned to a single Deep POV character.
 
 ## Concrete Examples (Before vs. After Craft Application)
 

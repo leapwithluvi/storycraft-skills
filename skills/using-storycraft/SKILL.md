@@ -100,10 +100,10 @@ Upon activation, the agent inspects the file tree in order:
 
 3. **Step 3: Present the Executive Status Dashboard**
    - Provide a concise 4-line status summary:
-     - 📖 **Novel Title & Current Coordinates**
-     - 🎯 **Current Milestone Objective**
-     - ⚠️ **Identified Blockers or Open Loops**
-     - 🚀 **Recommended Next Skill**
+     -  **Novel Title & Current Coordinates**
+     -  **Current Milestone Objective**
+     -  **Identified Blockers or Open Loops**
+     -  **Recommended Next Skill**
 
 4. **Step 4: Offer Clear Action Paths**
    - Give the author two distinct paths forward:
@@ -119,9 +119,9 @@ Upon activation, the agent inspects the file tree in order:
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The "Just Start Writing" Trap**: Diving into Chapter 1 drafting when the author has not defined the protagonist's flaw or the core dramatic question.
-- ❌ **The Overwhelming Menu**: Dumping all 20 skills in a giant wall of text instead of diagnosing and recommending the single best action.
-- ❌ **The Amnesiac Reboot**: Asking the author "What is your novel about?" when `story-bible.md` already contains complete dossiers.
+- **The "Just Start Writing" Trap**: Diving into Chapter 1 drafting when the author has not defined the protagonist's flaw or the core dramatic question.
+- **The Overwhelming Menu**: Dumping all 20 skills in a giant wall of text instead of diagnosing and recommending the single best action.
+- **The Amnesiac Reboot**: Asking the author "What is your novel about?" when `story-bible.md` already contains complete dossiers.
 
 ## Concrete Examples (Before vs. After Craft Application)
 
@@ -131,15 +131,15 @@ Upon activation, the agent inspects the file tree in order:
 > Hello! You can do whatever you want! We could write a new chapter, brainstorm some characters, make a magic system, or edit previous work. What sounds fun to you today?
 
 **After (Using-StoryCraft Autonomous Triage):**
-> 🧭 **StoryCraft Status Dashboard: *The Obsidian Meridian***  
+>  **StoryCraft Status Dashboard: *The Obsidian Meridian***  
 > - **Current Coordinates:** Chapter 4 (Scene 2: Subterranean Canal) | POV: Kira Vance  
 > - **Current Word Count:** ~11,200 words  
 > - **Active Conflict:** Kira has escaped the archives with the cipher, but her left shoulder is dislocated and Captain Brandt is sealing the floodgates in 30 minutes.  
 > 
-> 🔍 **Diagnostic Assessment:**  
+>  **Diagnostic Assessment:**  
 > Your chapter beats for Chapter 4 are outlined, but Scene 2 has not been drafted yet. Kira's active physical trauma requires tight sensory grounding.  
 > 
-> 🚀 **Recommended Next Step:**  
+>  **Recommended Next Step:**  
 > Invoke **`/novel-chapter-drafter`** (or `/novel-scene-beater`) to draft Scene 2, integrating her injury limitations via **`novel-deep-pov`**.  
 > 
 > Shall we begin drafting Scene 2, or would you prefer to review Chapter 3 first with **`/novel-continuity-checker`**?

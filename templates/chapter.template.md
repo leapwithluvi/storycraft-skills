@@ -4,7 +4,7 @@
 **Setting / Location:** [Location Name, Time of Day, Weather]  
 **Target Word Count:** [e.g., 3,000–4,000 words]  
 **Timeline Coordinate:** [e.g., Day 4, Autumn, Midnight]  
-**Value Shift:** [e.g., Hopeful / Reunited (+) ➔ Betrayed / Captured (-)]  
+**Value Shift:** [e.g., Hopeful / Reunited (+)  Betrayed / Captured (-)]  
 
 ---
 

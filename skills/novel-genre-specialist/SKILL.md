@@ -119,10 +119,10 @@ Never use a trope purely out of laziness. Treat tropes as conscious strategic to
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The Bait-and-Switch Climax**: Selling a book as a locked-room mystery, then solving the murder with an unannounced magic spell or alien intervention.
-- ❌ **The Cheated Romance Ending**: Writing a romance that ends in tragedy (killing one lover in the final chapter) without labeling it a Tragedy, triggering intense reader backlash.
-- ❌ **The Cartoon Villain Syndrome**: In thrillers or fantasy, reducing the antagonist to laughing maniacally while kicking puppies instead of having understandable ideological motives.
-- ❌ **Trope Salad**: Throwing ten trendy tropes together (Enemies to Lovers + Vampire Prince + Academy + Fake Marriage + Chosen One) without emotional coherence.
+- **The Bait-and-Switch Climax**: Selling a book as a locked-room mystery, then solving the murder with an unannounced magic spell or alien intervention.
+- **The Cheated Romance Ending**: Writing a romance that ends in tragedy (killing one lover in the final chapter) without labeling it a Tragedy, triggering intense reader backlash.
+- **The Cartoon Villain Syndrome**: In thrillers or fantasy, reducing the antagonist to laughing maniacally while kicking puppies instead of having understandable ideological motives.
+- **Trope Salad**: Throwing ten trendy tropes together (Enemies to Lovers + Vampire Prince + Academy + Fake Marriage + Chosen One) without emotional coherence.
 
 ## Concrete Examples (Before vs. After Craft Application)
 

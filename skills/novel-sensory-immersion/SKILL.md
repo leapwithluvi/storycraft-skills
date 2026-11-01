@@ -100,11 +100,11 @@ Sensory details must always be filtered through the POV character's psychologica
 
 ## Anti-Patterns & Prohibited AI Tropes
 
-- ❌ **The Visual Laundry List**: Describing a character's outfit from head to toe with colors, fabrics, and jewelry like an online catalog.
-- ❌ **The Universal Shiver**: Characters constantly "shivering," "trembling," or "shaking" to indicate any form of fear, cold, or excitement.
-- ❌ **Floating Scent Syndrome**: Smells introduced as detached adjectives ("a pleasant aroma", "a bad smell") without identifying specific chemical, culinary, or biological origin.
-- ❌ **The Sterile Battlefield / Hospital / Dungeon**: Action settings where nobody sweats, nobody smells blood, no one slips on spent shell casings or wet flagstones, and ears don't ring after gunshots.
-- ❌ **Purple Sensory Overload**: Stacking five adjectives before every noun ("The dark, gloomy, freezing, ancient, obsidian cavern").
+- **The Visual Laundry List**: Describing a character's outfit from head to toe with colors, fabrics, and jewelry like an online catalog.
+- **The Universal Shiver**: Characters constantly "shivering," "trembling," or "shaking" to indicate any form of fear, cold, or excitement.
+- **Floating Scent Syndrome**: Smells introduced as detached adjectives ("a pleasant aroma", "a bad smell") without identifying specific chemical, culinary, or biological origin.
+- **The Sterile Battlefield / Hospital / Dungeon**: Action settings where nobody sweats, nobody smells blood, no one slips on spent shell casings or wet flagstones, and ears don't ring after gunshots.
+- **Purple Sensory Overload**: Stacking five adjectives before every noun ("The dark, gloomy, freezing, ancient, obsidian cavern").
 
 ## Concrete Examples (Before vs. After Craft Application)
 

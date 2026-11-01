@@ -13,7 +13,9 @@ If you discover a security vulnerability within StoryCraft Skills, please report
 ### How to Report
 
 1. **Do NOT open a public GitHub issue** for security vulnerabilities.
-2. Send a detailed report to: **security@primeradiant.com**
+2. Submit a report privately via **GitHub Security Advisories**:
+   - Navigate to the repository on GitHub: `https://github.com/leapwithluvi/storycraft-skills/security`
+   - Click **Report a vulnerability** under the Advisories section to submit a confidential report directly to the maintainer.
 3. Include the following information:
    - Description of the vulnerability
    - Steps to reproduce

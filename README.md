@@ -9,7 +9,6 @@ StoryCraft is a complete fiction writing methodology for your writing and coding
 ## Table of Contents
 
 - [How it works](#how-it-works)
-- [Commercial Services](#commercial-services)
 - [Getting Started](#installation)
   - [Claude Code](#claude-code)
   - [Antigravity](#antigravity)
@@ -50,10 +49,6 @@ After you have signed off on the core concept and characters, your agent puts to
 Next up, once you say "write", it launches an autonomous drafting process using `novel-chapter-drafter` or `novel-scene-beater`. It reads preceding manuscript files, active injuries, and inventory state, and composes chapters grounded in Deep POV (zero filter words), sensory immersion (sound, smell, touch, temperature, somatics), and subtextual dialogue. It runs continuity audits between chapters and updates `story-state.md` after every milestone.
 
 There's a bunch more to it, but that's the core of the system. And because the skills trigger automatically via workflow slash commands or autonomous orchestration, you don't need to do anything special. Your writing agent just has StoryCraft.
-
-## Commercial Services
-
-If you're using StoryCraft in publishing houses, creative writing studios, or enterprise game narrative teams and could benefit from commercial support, custom genre packs, or dedicated integration engineering, please contact us at sales@primeradiant.com.
 
 ## Installation
 
@@ -427,12 +422,11 @@ The general contribution process for StoryCraft is below:
 
 1. Fork the repository.
 2. Switch to the `dev` or feature branch (`git checkout -b feat/my-new-skill`).
-3. Follow `skills/writing-skills/SKILL.md` or run `node bin/storycraft.mjs new <skill-name>` to scaffold new skills.
+3. Follow the skill guidelines in `CONTRIBUTING.md` to scaffold new skills.
 4. Ensure all 9 mandatory sections from the specification are fully populated with deep literary craft.
-5. Run tests and sync multiplatform targets:
+5. Run the validation and test suite:
    ```bash
    npm test
-   node bin/storycraft.mjs sync --target all
    ```
 6. Submit a Pull Request with a clear summary of the literary methodologies introduced.
 
@@ -456,7 +450,7 @@ StoryCraft updates are dependent on your agent harness, but can be updated via C
 
 ```bash
 git pull origin main
-node bin/storycraft.mjs sync --target all
+npm test
 ```
 
 ## License

@@ -21,14 +21,13 @@ StoryCraft Skills has **zero external runtime dependencies**. You only need [Nod
  git clone https://github.com/leapwithluvi/storycraft-skills.git
  cd storycraft-skills
  ```
-2. **Verify installation:**
+2. **Verify installation & validation:**
  ```bash
- node bin/storycraft.mjs list
+ npm run validate
  ```
 3. **Run the test suite:**
  ```bash
  npm test
- # or: node bin/storycraft.mjs test
  ```
 
 ---
@@ -77,14 +76,14 @@ To ensure consistency and high-level reasoning across all LLMs, every `SKILL.md`
 
 ## Creating a New Skill
 
-Use the built-in CLI generator to scaffold a fully compliant skill template:
+Create a new directory under `skills/` and populate `SKILL.md`:
 
 ```bash
 # Example: Creating a romance tropes skill
-node bin/storycraft.mjs new romance-rivalry
+mkdir -p skills/novel-romance-rivalry
 ```
 
-This creates `skills/novel-romance-rivalry/SKILL.md` populated with all required headers.
+Create `skills/novel-romance-rivalry/SKILL.md` populated with all 9 required sections described below.
 
 ### Guidelines for Writing High-Quality Skills:
 - **Literary Rigor**: Ground instructions in established narrative craft (e.g., K.M. Weiland, Robert McKee, John Gardner, Donald Maass, Jim Butcher, Brandon Sanderson).

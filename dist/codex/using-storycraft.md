@@ -53,15 +53,17 @@ Stage 6: Continuity Verification & Story Bible Canonization
 
 ### 2. The Workspace Triage Protocol
 Upon activation, the agent inspects the file tree in order:
-1. Does `story-state.md` exist? $\rightarrow$ Read current coordinates (Chapter, Scene, POV, Word Count).
+1. Does `story-state.md` exist? $\rightarrow$ Read current coordinates (Chapter, Scene, POV, Word Count, Target Format).
 2. Does `story-bible.md` exist? $\rightarrow$ Check for filled Character Dossiers and World Rules.
-3. Does `manuscript/` exist? $\rightarrow$ Check the latest written chapter file and word count.
+3. Does `docs/storycraft/` exist? $\rightarrow$ Inspect planning briefs (`pitch-brief.md`, `market-analysis.md`, `plot-architecture.md`, `chapter-roadmaps.md`).
+4. Does `manuscript/` exist? $\rightarrow$ Check the latest written chapter file and word count.
 
 ### 3. Skill Recommendation Routing Matrix
 
 | Project Condition | Primary Skill to Route | Secondary / Fallback Skill |
 | :--- | :--- | :--- |
 | No premise or just a raw idea | `novel-brainstorming` | `novel-premise-hook` |
+| Concept ready, need target platform & market strategy | `novel-market-analyst` | `novel-genre-specialist` |
 | Premise exists, but characters feel flat | `novel-character-architect` | `novel-genre-specialist` |
 | Characters exist, but world/magic is empty | `novel-worldbuilder` | `novel-lore-bible` |
 | Cast & world locked, but no plot arc | `novel-plot-architect` | `novel-twist-architect` |

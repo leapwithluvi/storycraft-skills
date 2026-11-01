@@ -155,9 +155,10 @@ Pinch Points exist to keep the antagonist relevant while the protagonist pursues
 ## Session State Hook
 
 When completing or updating macro plot architecture:
-1. Update `templates/story-state.template.md` (or project `story-state.md`) under:
+1. Save the comprehensive structural roadmap into `docs/storycraft/plot-architecture.md`.
+2. Update `story-state.md` under:
    - `## 2. Active Plot Threads & Stakes`
    - Record active milestones for Act 1, Act 2, and Act 3.
-2. Outline the immediate upcoming chapter sequence using `novel-chapter-outline`.
-3. Set the Next Session Bootstrap Prompt toward scene breaking or chapter drafting.
+3. Outline the immediate upcoming chapter sequence using `novel-chapter-outline` and save to `docs/storycraft/chapter-roadmaps.md`.
+4. Set the Next Session Bootstrap Prompt toward scene breaking or chapter drafting.
 

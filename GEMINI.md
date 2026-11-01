@@ -19,6 +19,7 @@ StoryCraft equips your agent with 20 professional fiction writing and novel arch
 - novel-character-architect
 - novel-worldbuilder
 - novel-genre-specialist
+- novel-market-analyst
 - novel-plot-architect
 - novel-twist-architect
 - novel-chapter-outline

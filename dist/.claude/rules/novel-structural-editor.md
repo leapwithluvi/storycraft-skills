@@ -122,8 +122,9 @@ Roger Ebert coined "The Idiot Plot": Any plot that only moves forward because ev
 ## Session State Hook
 
 When completing a structural edit:
-1. Update `story-state.md` under:
+1. Save the full Setup-to-Payoff ledger and plot integrity report into `docs/storycraft/audits/structural-audit.md`.
+2. Update `story-state.md` under:
    - `## 2. Active Plot Threads & Stakes` (retire resolved threads, update unearned open loops).
    - `## 3. Session Checkpoint & Recent Decisions` (log changes to setup-and-payoff logic).
-2. Update the master timeline and lore entries in `story-bible.md`.
-3. Set the Next Session Bootstrap Prompt toward continuity checking (`novel-continuity-checker`) or pacing fixes (`novel-pacing-doctor`).
+3. Update the master timeline and lore entries in `story-bible.md`.
+4. Set the Next Session Bootstrap Prompt toward continuity checking (`novel-continuity-checker`) or pacing fixes (`novel-pacing-doctor`).

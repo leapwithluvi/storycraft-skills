@@ -126,7 +126,8 @@ The climax of the twist must hit both mind and circumstance simultaneously:
 ## Session State Hook
 
 When completing plot twist architecture:
-1. Update `story-bible.md` with the canonical Real Truth and Fair-Play Clue Ledger under `## 1. Premise & Core Dramatic Question`.
-2. Ensure `novel-chapter-outline` and `novel-structural-editor` incorporate the three clue planting checkpoints.
-3. Set the Next Session Bootstrap Prompt toward chapter drafting or scene beating.
+1. Save the Fair-Play Clue Ledger, red herring motives, and reveal choreography to `docs/storycraft/twist-matrix.md`.
+2. Update `story-bible.md` with the canonical Real Truth under `## 1. Premise & Core Dramatic Question`.
+3. Ensure `novel-chapter-outline` and `novel-structural-editor` incorporate the three clue planting checkpoints.
+4. Set the Next Session Bootstrap Prompt toward chapter drafting or scene beating.
 

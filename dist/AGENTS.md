@@ -43,6 +43,14 @@ Full instructions: `dist/codex/novel-genre-specialist.md`
 
 ---
 
+## novel-market-analyst
+
+Use to analyze commercial viability, reader demographics, and genre trends across physical print and digital novel platforms (Royal Road, Webnovel, Wattpad, Amazon KDP, KBM/Fizzo, Substack) — formulates platform positioning, monetization models, and conducts competitive market research.
+
+Full instructions: `dist/codex/novel-market-analyst.md`
+
+---
+
 ## novel-premise-hook
 
 Use when developing the foundational concept for a novel — crafts high-concept premises, compelling loglines, central dramatic questions, and opening hooks that seize reader attention from page one.

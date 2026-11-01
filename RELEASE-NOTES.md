@@ -6,7 +6,7 @@ Initial release of StoryCraft Skills: a complete fiction writing methodology and
 
 ### Highlights
 
-- **20 Specialized Fiction Skills**: Complete literary pipeline spanning Stage 0 (Meta & Ideation) through Stage 6 (Continuity & Story Bible).
+- **21 Specialized Fiction Skills**: Complete literary pipeline spanning Stage 0 (Meta & Ideation) through Stage 6 (Continuity & Story Bible).
 - **Zero-Latency State Persistence**: Solves LLM context-window truncation and memory loss via `story-state.md` checkpoints and the Next Session Bootstrap Prompt.
 - **Autonomous Chapter Drafter**: Single and multi-chapter batch drafting engine (`novel-chapter-drafter`) that ingests project state and prior chapter files.
 - **Publishing Format Flexibility**: Native support for Webnovels (rapid pacing, 1,500w chapters, cliffhanger hooks), Traditional Commercial Novels (80k-100k words, 3-act structure), Light Novels, and Serial Fiction.
@@ -25,6 +25,7 @@ Initial release of StoryCraft Skills: a complete fiction writing methodology and
 - `novel-character-architect`: Psychological Lie, Origin Wound (Ghost), Want vs. Need, and ensemble foils.
 - `novel-worldbuilder`: Sanderson's Laws of Magic, Iceberg Principle, and sensory ecology.
 - `novel-genre-specialist`: Obligatory scene enforcement, trope subversion, and publishing format adaptation.
+- `novel-market-analyst`: Physical print vs. digital serial platforms, audience demographics, tag algorithms, and monetization models.
 
 #### Stage 2: Plotting & Narrative Architecture
 - `novel-plot-architect`: Three-Act Nine-Block, Dan Wells 7-Point, Midpoint Reversals, and Kishotenketsu.

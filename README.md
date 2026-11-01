@@ -379,6 +379,7 @@ StoryCraft is built by Leap With Luvi and the open-source fiction engineering co
 - **novel-character-architect** - The Lie The Character Believes, Origin Wound (Ghost), Want vs. Need, and ensemble foil architecture.
 - **novel-worldbuilder** - Sanderson's Laws of Magic, Iceberg Principle, and P.E.S.T.L.E. sensory ecology framework.
 - **novel-genre-specialist** - Obligatory scenes, genre pacing ratios, and trope subversion across Fantasy, Sci-Fi, Mystery, Thriller, Romance, Horror, Historical, and Webnovels.
+- **novel-market-analyst** - Commercial viability analysis across physical print and digital platforms (Royal Road, Webnovel, Wattpad, Amazon KDP, KBM/Fizzo, Substack), audience demographics, tag algorithms, and monetization models.
 
 #### Plotting and Structure
 - **novel-plot-architect** - Three-Act Nine-Block, Dan Wells 7-Point, Midpoint Reversals, and Kishotenketsu.

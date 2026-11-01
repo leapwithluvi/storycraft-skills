@@ -151,9 +151,10 @@ If the novel uses multiple perspective characters:
 ## Session State Hook
 
 When completing or updating a chapter outline:
-1. Log chapter summaries and active POV assignments in `story-state.md` under:
+1. Save the chapter breakdown and beat sheets into `docs/storycraft/chapter-roadmaps.md`.
+2. Log chapter summaries and active POV assignments in `story-state.md` under:
    - `## Current Active Chapter`
    - `## 2. Active Plot Threads & Stakes`
-2. Prepare the Scene Beats for the immediate next chapter using `novel-scene-beater`.
-3. Set the Next Session Bootstrap Prompt toward scene drafting or chapter execution.
+3. Prepare the Scene Beats for the immediate next chapter using `novel-scene-beater` or initiate full chapter drafting via `novel-chapter-drafter`.
+4. Set the Next Session Bootstrap Prompt toward scene drafting or chapter execution.
 

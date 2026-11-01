@@ -151,8 +151,9 @@ In fiction, characters do not have video-game health bars that reset after a nig
 ## Session State Hook
 
 When completing a continuity check:
-1. Update `story-state.md` under:
+1. Save the Forensic Continuity Audit Report into `docs/storycraft/audits/continuity-audit-ch[N].md`.
+2. Update `story-state.md` under:
    - `## 3. Session Checkpoint & Recent Decisions` (log resolved continuity issues or canonized adjustments).
    - Check that inventory and injury trackers are 100% synchronized with the latest draft facts.
-2. Record any newly introduced facts in `story-bible.md`.
-3. Set the Next Session Bootstrap Prompt toward the next chapter drafting phase.
+3. Record any newly introduced facts in `story-bible.md`.
+4. Set the Next Session Bootstrap Prompt toward the next chapter drafting phase.

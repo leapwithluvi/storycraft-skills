@@ -438,6 +438,14 @@ function cmdInit(targetDir) {
     console.log(`  ${C.green}✓${C.reset} Created manuscript/chapter-01.md`);
   }
 
+  // Create docs/storycraft planning and audit directories
+  const docsStorycraftDir = join(dir, 'docs', 'storycraft');
+  const auditsDir = join(docsStorycraftDir, 'audits');
+  ensureDir(docsStorycraftDir);
+  ensureDir(auditsDir);
+  console.log(`  ${C.green}✓${C.reset} Created docs/storycraft/ (planning & pitch briefs)`);
+  console.log(`  ${C.green}✓${C.reset} Created docs/storycraft/audits/ (continuity & structural reports)`);
+
   console.log(`\n${C.green}Novel workspace ready at ${C.bold}${dir}${C.reset}\n`);
 }
 

@@ -125,5 +125,6 @@ Before plotting physical events, determine the emotional state of the final chap
 ## Session State Hook
 
 When completing a creative brainstorming session:
-1. Save the generated **Creative Design Document** into `story-state.md` under `## 1. Quick Narrative Summary` or initialize `story-bible.md` under `## 1. Premise & Core Dramatic Question`.
-2. Guide the author to transition seamlessly into **`novel-premise-hook`** to formulate their official 4-element logline.
+1. Save the generated **Creative Design Document (Story Brief)** into `docs/storycraft/pitch-brief.md`.
+2. Update `story-state.md` under `## 1. Quick Narrative Summary` with the core dramatic premise and themes.
+3. Guide the author to transition into **`novel-market-analyst`** to evaluate platform viability, or directly into **`novel-premise-hook`** to formulate the formal 4-element logline.

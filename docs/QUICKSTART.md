@@ -1,6 +1,6 @@
-# StoryCraft Skills — Quickstart Guide for Authors 🚀
+# StoryCraft Skills — Quickstart Guide for Authors
 
-Welcome to StoryCraft Skills! This guide walks you through setting up a professional novel workspace and drafting your first chapter using the 15-skill pipeline.
+Welcome to StoryCraft Skills. This guide walks you through setting up a professional novel workspace, selecting your target publishing format, and drafting your chapters using the 21-skill pipeline.
 
 ---
 
@@ -9,13 +9,16 @@ Welcome to StoryCraft Skills! This guide walks you through setting up a professi
 Open your terminal in your novel's project directory and run:
 
 ```bash
-# If using npx or local script
+# Initialize templates and project structure
 npx storycraft init
 ```
 
-This creates two essential files in your folder:
-1. `story-bible.md`: The permanent encyclopedia of your world, characters, magic rules, and master timeline.
-2. `story-state.md`: The living checkpoint that tracks where you are right now and prevents AI memory loss.
+This creates the canonical project hierarchy:
+- `story-bible.md`: The permanent encyclopedia of your world, characters, magic rules, and master timeline.
+- `story-state.md`: The living checkpoint tracking active chapters, injuries, and the Next Session Bootstrap Prompt.
+- `docs/storycraft/`: Planning briefs (`pitch-brief.md`, `market-analysis.md`, `plot-architecture.md`, `chapter-roadmaps.md`).
+- `docs/storycraft/audits/`: Continuity and structural audit reports.
+- `manuscript/`: Clean markdown chapter files (`chapter-01.md`).
 
 ---
 
@@ -23,15 +26,20 @@ This creates two essential files in your folder:
 
 Choose the platform you use:
 
-### For Antigravity IDE / Antigravity CLI
-Copy the pre-compiled `.agents/` folder into your novel workspace:
+### For Antigravity IDE and Antigravity CLI
+Install as a plugin:
+```bash
+agy plugin install https://github.com/leapwithluvi/storycraft-skills
+```
+Or copy the pre-compiled `.agents/` folder into your novel workspace:
 ```bash
 cp -r path/to/storycraft-skills/dist/.agents ./
 ```
-Now in your Antigravity chat, you can invoke any skill via slash command:
-- `/novel-premise-hook`
-- `/novel-character-architect`
-- `/novel-scene-beater`
+In your Antigravity chat, all skills are immediately available via slash commands:
+- `/using-storycraft`
+- `/novel-brainstorming`
+- `/novel-market-analyst`
+- `/novel-chapter-drafter`
 - `/novel-session-memory`
 
 ### For Cursor
@@ -43,84 +51,102 @@ cp -r path/to/storycraft-skills/dist/.cursor ./
 ### For Claude (Desktop or Web Projects)
 Copy `CLAUDE.md` and `.claude/` into your project directory.
 
-### For OpenAI Codex / OpenCode
-Copy `AGENTS.md` and `codex/` into your project directory.
+### For OpenAI Codex and OpenCode
+Copy `AGENTS.md` and `dist/codex/` into your project directory.
 
 ---
 
-## Step 3: Phase 1 — Develop Your Premise & Cast
+## Step 3: Phase 0 — Session Start and Brainstorming
 
-Start a conversation with your AI assistant and use the ideation skills:
+Start a conversation with your assistant:
 
-### 1. Polish the Core Premise
+### 1. Project Triage
 Type:
-> `/novel-premise-hook I have an idea about an underwater city where memories are taxed by an ancient syndicate, and an ex-diver discovers her dead daughter's memories in a contraband vault.`
+> `/using-storycraft`
 
-The agent will apply the **4-Element Logline Formula**, identify the **Core Dramatic Question**, and run the **What-If Escalator**.
+The agent scans your workspace, diagnoses your current progress, and guides you to the optimal next skill.
 
-### 2. Build Your Protagonist & Antagonist
+### 2. Socratic Brainstorming
 Type:
-> `/novel-character-architect Let's flesh out the diver, Kira. What is the Lie she believes, her Ghost wound, and her Want vs. Need?`
+> `/novel-brainstorming I have an idea about an underwater salvage diver who discovers an intact Victorian train at the bottom of the trench.`
 
-The agent creates a psychological dossier complete with contradictory flaws, somatic tells, and foil relationships.
+The agent conducts a focused 1-on-1 interview exploring theme, tone, comp titles, and emotional stakes, saving the output to `docs/storycraft/pitch-brief.md`.
 
 ---
 
-## Step 4: Phase 2 — Plotting & Chapter Roadmaps
+## Step 4: Phase 1 — Market Strategy and World Architecture
 
-### 1. Build the Macro Plot
+### 1. Market and Publishing Platform Alignment
 Type:
-> `/novel-plot-architect Help me structure the Three-Act / Nine-Block plot for this novel. What is the Midpoint shift?`
+> `/novel-market-analyst Where should I publish this story? Compare Royal Road serialization vs. Amazon KDP vs. Traditional Print.`
 
-The agent maps the major turning points, pinch points, and the 75% Dark Night of the Soul.
+The agent evaluates reader demographics, top genre tropes, release schedules, and monetization funnels, saving the strategy to `docs/storycraft/market-analysis.md`.
 
-### 2. Outline Chapter 1
+### 2. Lock the Premise and Cast
 Type:
-> `/novel-chapter-outline Break down Chapter 1 into tight beats. What is the Value Shift (+ to -) and the closing cliffhanger?`
+> `/novel-premise-hook Formulate the 4-element logline and Core Dramatic Question.`
+> `/novel-character-architect Let's build the protagonist's Lie, Origin Wound (Ghost), and Want vs. Need.`
+> `/novel-worldbuilder Establish the deep-sea pressure mechanics and oxygen costs under Sanderson's Laws.`
 
 ---
 
-## Step 5: Phase 3 — Drafting Scenes with Maximum Immersion
+## Step 5: Phase 2 — Plot Architecture and Fair-Play Twists
 
-When drafting prose, pair the drafting skills for cinematic quality:
-
-### 1. Beat the Scene (Scene & Sequel)
+### 1. Macro Plot Structure
 Type:
-> `/novel-scene-beater Draft Scene 1 of Chapter 1 with Kira breaking into the decompression valve. Apply 'In Late, Out Early'.`
+> `/novel-plot-architect Structure the Three-Act / Nine-Block arc. What is the Midpoint shift?`
 
-### 2. Inject Multi-Sensory Textures
-Type:
-> `/novel-sensory-immersion Add olfactory, tactile, and thermal sensations to this decompression scene. Remove visual-only descriptions.`
+Saves the structural roadmap to `docs/storycraft/plot-architecture.md`.
 
-### 3. Eliminate Filter Words with Deep POV
+### 2. Fair-Play Plot Twists
 Type:
-> `/novel-deep-pov Polish this draft into Deep POV. Remove all 'she saw', 'she felt', and 'she wondered'.`
+> `/novel-twist-architect Design a Recontextualization twist for the 75% turn. Plant clues under emotional distraction.`
+
+Saves the clue and red herring matrix to `docs/storycraft/twist-matrix.md`.
+
+### 3. Chapter-by-Chapter Roadmaps
+Type:
+> `/novel-chapter-outline Break Act 1 into chapters. Calculate McKee Value Shifts (+/-) and cliffhangers.`
+
+Saves the chapter breakdown to `docs/storycraft/chapter-roadmaps.md`.
 
 ---
 
-## Step 6: Phase 4 & 5 — Subtextual Dialogue & Revision
+## Step 6: Phase 3 — Autonomous Chapter Drafting
 
-### 1. Subtextual Dialogue
-Type:
-> `/novel-dialogue-subtext Kira is confronting her former handler in a tea shop. Make the dialogue cold and subtextual, using tea brewing as stage business.`
+When you are ready to write:
 
-### 2. Pacing & Momentum Check
+### 1. Single or Batch Chapter Drafting
 Type:
-> `/novel-pacing-doctor Audit Chapter 3. Does it suffer from Act 2 drag? How can we inject a ticking clock?`
+> `/novel-chapter-drafter Draft Chapter 1 based on our roadmap and story bible.`
+> *Or:*
+> `/novel-chapter-drafter Batch draft Chapters 1 through 3 with continuity checkpoints.`
 
-### 3. Continuity & Canon Verification
-Type:
-> `/novel-continuity-checker Audit Chapter 4 against story-bible.md. Did Kira remember her injured shoulder from Chapter 2?`
+The agent reads `story-state.md`, `story-bible.md`, and preceding chapters, drafting full 2,500–4,500 word chapters into `manuscript/chapter-[N].md` with Deep POV (zero filter words), sensory immersion, and subtextual dialogue.
 
 ---
 
-## Step 7: Saving Progress & Never Losing Context
+## Step 7: Phase 4 & 5 — Revision and Continuity Auditing
+
+### 1. Forensic Continuity Audit
+Type:
+> `/novel-continuity-checker Audit Chapter 2 against story-bible.md and story-state.md. Check injury decay and inventory.`
+
+Saves the audit report into `docs/storycraft/audits/continuity-audit-ch02.md`.
+
+### 2. Pacing and Tension Check
+Type:
+> `/novel-pacing-doctor Audit Chapter 4. Check for Act 2 drag and inject a ticking clock.`
+
+---
+
+## Step 8: Saving Progress and Session Persistence
 
 Before closing your editor or when your AI conversation approaches token limits:
 
 Type:
 > `/novel-session-memory Checkpoint today's work and prepare the next session bootstrap prompt.`
 
-The agent will update `story-state.md` with your new chapter coordinates, active injuries, inventory changes, and give you a **Next Session Bootstrap Prompt**.
+The agent updates `story-state.md` with new chapter coordinates, active injuries, and inventory changes, providing an authoritative **Next Session Bootstrap Prompt**.
 
-When you resume tomorrow, simply paste the bootstrap prompt in a fresh chat, and your agent will pick up seamlessly where you left off! 🖋️
+When you resume tomorrow, paste the bootstrap prompt in a fresh chat, and your agent picks up seamlessly where you left off.

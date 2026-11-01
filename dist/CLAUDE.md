@@ -1,7 +1,7 @@
 # StoryCraft Skills — Novel Writing Agent Instructions
 
 > These rules equip the AI assistant with professional novel-writing craft.
-> 20 specialized skills across the full fiction writing pipeline.
+> 21 specialized skills across the full fiction writing pipeline.
 
 ## Stage 0
 
@@ -18,6 +18,8 @@
   - Rule file: `.claude/rules/novel-character-architect.md`
 - **novel-genre-specialist**: Use when calibrating a novel to specific genre conventions, reader expectations, obligatory scenes, and trope subversions — covers Fantasy, Sci-Fi, Mystery, Thriller, Romance, Horror, Historical, and Webnovel/LitRPG genres.
   - Rule file: `.claude/rules/novel-genre-specialist.md`
+- **novel-market-analyst**: Use to analyze commercial viability, reader demographics, and genre trends across physical print and digital novel platforms (Royal Road, Webnovel, Wattpad, Amazon KDP, KBM/Fizzo, Substack) — formulates platform positioning, monetization models, and conducts competitive market research.
+  - Rule file: `.claude/rules/novel-market-analyst.md`
 - **novel-premise-hook**: Use when developing the foundational concept for a novel — crafts high-concept premises, compelling loglines, central dramatic questions, and opening hooks that seize reader attention from page one.
   - Rule file: `.claude/rules/novel-premise-hook.md`
 - **novel-worldbuilder**: Use when designing fictional worlds, settings, magic systems, technology levels, social hierarchies, and sensory environments for a novel — ensures worlds feel lived-in, organically integrated into plot, and free of encyclopedic info-dumps.

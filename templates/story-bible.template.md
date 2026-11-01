@@ -1,6 +1,7 @@
 # Story Bible: [Your Novel Title]
 
 **Genre:** [Primary Genre / Subgenre]  
+**Target Publishing Format:** [Commercial Novel (80k-100k) | Webnovel (Royal Road/Wuxiaworld/Wattpad, 1,500w-2,000w/ch) | Light Novel | Serial Fiction]  
 **Target Word Count:** [e.g., 80,000–100,000]  
 **POV Style:** [Deep Third / First Person / Omniscient / Multiple POV]  
 **Tense:** [Past / Present]  

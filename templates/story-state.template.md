@@ -1,6 +1,7 @@
 # Novel Project State: [Your Novel Title]
 
 **Last Updated:** [Date & Time]  
+**Target Publishing Format:** [Commercial Novel (80k-100k) | Webnovel (1,500w/ch) | Light Novel | Serial Fiction]  
 **Current Active Chapter:** Chapter [N]  
 **Current Active Scene:** Scene [M]  
 **POV Character (this chapter):** [Character Name]  

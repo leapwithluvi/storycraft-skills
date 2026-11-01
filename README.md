@@ -1,227 +1,446 @@
-# 🖋️ StoryCraft
+# StoryCraft
 
-> **StoryCraft is a complete fiction writing methodology and agentic skill system for your AI coding and writing agents, built on top of 20 composable literary craft skills and persistent session memory that make sure your agent writes publishable, immersive novels.**
+StoryCraft is a complete fiction writing methodology for your writing and coding agents, built on top of a set of composable literary craft skills and some initial instructions that make sure your agent uses them.
 
-[![CI](https://github.com/leapwithluvi/storycraft-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/leapwithluvi/storycraft-skills/actions)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Zero Dependencies](https://img.shields.io/badge/dependencies-0-success.svg)](package.json)
-[![Skills Library](https://img.shields.io/badge/skills-20%20novel%20skills-purple.svg)](skills/)
-[![Multiplatform](https://img.shields.io/badge/platforms-Antigravity%20%7C%20Cursor%20%7C%20Claude%20%7C%20Codex%20%7C%20Gemini-orange.svg)](#installation)
+## Table of Contents
 
----
-
-## 📑 Table of Contents
-
-- [How it Works](#how-it-works)
-- [Installation](#installation)
-  - [Antigravity](#antigravity)
-  - [Cursor](#cursor)
+- [How it works](#how-it-works)
+- [Commercial Services](#commercial-services)
+- [Getting Started](#installation)
   - [Claude Code](#claude-code)
-  - [OpenAI Codex App & CLI](#openai-codex-app--cli)
+  - [Antigravity](#antigravity)
+  - [Codex App](#codex-app)
+  - [Codex CLI](#codex-cli)
+  - [Cursor](#cursor)
+  - [Devin CLI](#devin-cli)
+  - [Factory Droid](#factory-droid)
   - [Gemini CLI](#gemini-cli)
+  - [GitHub Copilot CLI](#github-copilot-cli)
+  - [Grok Build CLI](#grok-build-cli)
+  - [Kimi Code](#kimi-code)
   - [OpenCode](#opencode)
+  - [Pi](#pi)
+  - [Qwen Code](#qwen-code)
+  - [Hermes Agent](#hermes-agent)
+  - [Muse](#muse)
+- [Publishing Formats and Target Platforms](#publishing-formats-and-target-platforms)
 - [The Basic Workflow](#the-basic-workflow)
-- [What's Inside: The 20 Skills Library](#whats-inside-the-20-skills-library)
-- [Solving AI Amnesia: The State Persistence Engine](#solving-ai-amnesia-the-state-persistence-engine)
-- [Literary Craft Philosophy](#literary-craft-philosophy)
-- [CLI Reference](#cli-reference)
+- [When Something Goes Wrong](#when-something-goes-wrong)
+- [Community](#community)
+- [What's Inside](#whats-inside)
+- [Philosophy](#philosophy)
 - [Contributing](#contributing)
+- [Updating](#updating)
 - [License](#license)
+- [State persistence telemetry](#state-persistence-telemetry)
 
----
+## How it works
 
-## 💡 How it Works
+It starts from the moment you fire up your agent. As soon as it sees that you want to write a novel or create narrative fiction, it *doesn't* just jump into generating generic, cliché-ridden prose. Instead, it steps back and asks you what you're really trying to do through Socratic creative interview techniques.
 
-It starts from the moment you fire up your AI assistant. As soon as it sees you want to write a novel, it doesn't just jump into churning out generic, cliché-ridden melodrama. Instead, it steps back and initiates **`using-storycraft`** and **`novel-brainstorming`** to draw out what you're really trying to say, your emotional core, and your target audience.
+Once it has teased a premise and thematic core out of the conversation, it records it in structured format without overwhelming you. 
 
-Once a bulletproof premise is signed off:
-1. **The Blueprint**: Your agent architectures the world, character misbeliefs, and a Three-Act or 7-Point structure using **`novel-character-architect`** and **`novel-plot-architect`**.
-2. **The Chapter Beats**: It breaks your acts into 2,500–4,000 word chapter roadmaps with measurable Value Shifts (+ to -) using **`novel-chapter-outline`**.
-3. **Deep POV Drafting**: Once you say "write", it launches **`novel-chapter-drafter`** (or **`novel-scene-beater`**), composing scenes where sensory details, subtextual dialogue, and character neurobiology take precedence over dry exposition.
-4. **Forensic Auditing**: It runs Chekhov's Gun checks and wound continuity using **`novel-continuity-checker`** and **`novel-structural-editor`**.
-5. **Session Checkpointing**: When token limits approach or you conclude a session, **`novel-session-memory`** updates `story-state.md` and generates a zero-latency resume bootstrap prompt.
+After you have signed off on the core concept and characters, your agent puts together a macro-level plot and chapter-by-chapter roadmap that breaks the entire book into clear, actionable scenes. It enforces strict scene-and-sequel mechanics, character internal misbeliefs (The Lie), external objectives (Want vs. Need), and measurable value shifts (+ to -).
 
-Because skills trigger via intuitive slash commands (e.g. `/novel-character-architect`, `/novel-chapter-drafter`) or autonomous routing, you never lose narrative momentum.
+Next up, once you say "write", it launches an autonomous drafting process using `novel-chapter-drafter` or `novel-scene-beater`. It reads preceding manuscript files, active injuries, and inventory state, and composes chapters grounded in Deep POV (zero filter words), sensory immersion (sound, smell, touch, temperature, somatics), and subtextual dialogue. It runs continuity audits between chapters and updates `story-state.md` after every milestone.
 
----
+There's a bunch more to it, but that's the core of the system. And because the skills trigger automatically via workflow slash commands or autonomous orchestration, you don't need to do anything special. Your writing agent just has StoryCraft.
 
-## 📦 Installation
+## Commercial Services
 
-Installation differs by harness. StoryCraft provides pre-compiled, zero-tooling distributions in `dist/` alongside native plugin manifests.
+If you're using StoryCraft in publishing houses, creative writing studios, or enterprise game narrative teams and could benefit from commercial support, custom genre packs, or dedicated integration engineering, please contact us at sales@primeradiant.com.
+
+## Installation
+
+Installation differs by harness. If you use more than one, install StoryCraft separately for each one.
+
+### Claude Code
+
+StoryCraft is available via the Claude Code plugin ecosystem.
+
+#### Official Marketplace
+
+- Install the plugin from Anthropic's official marketplace:
+
+  ```bash
+  /plugin install storycraft@claude-plugins-official
+  ```
+
+#### StoryCraft Marketplace
+
+- Register the marketplace:
+
+  ```bash
+  /plugin marketplace add leapwithluvi/storycraft-marketplace
+  ```
+
+- Install the plugin from this marketplace:
+
+  ```bash
+  /plugin install storycraft@storycraft-marketplace
+  ```
+
+- Alternatively, copy the pre-compiled instructions directly into your workspace:
+
+  ```bash
+  cp dist/CLAUDE.md ./CLAUDE.md
+  cp -r dist/.claude ./.claude
+  ```
 
 ### Antigravity
-Install as an Antigravity plugin:
+
+Install StoryCraft as an Antigravity plugin from this repository:
+
 ```bash
 agy plugin install https://github.com/leapwithluvi/storycraft-skills
 ```
-*Or copy the pre-compiled `.agents/` folder directly into your novel project:*
+
+Antigravity lists each installed skill's description, and the description of the `using-storycraft` skill prompts the model to load that skill at the start of a conversation. Reinstall with the same command to update.
+
+Alternatively, copy the pre-compiled `.agents/` folder into your novel project root:
+
 ```bash
 cp -r dist/.agents /path/to/your/novel-project/
 ```
-In your Antigravity chat, all skills are immediately available via slash command (e.g., `/using-storycraft`, `/novel-brainstorming`, `/novel-chapter-drafter`).
+
+All 20 skills are immediately available via native chat slash commands (e.g. `/using-storycraft`, `/novel-brainstorming`, `/novel-chapter-drafter`).
+
+### Codex App
+
+StoryCraft is available for the OpenAI Codex App.
+
+- In the Codex app, click on Plugins in the sidebar.
+- Search for `StoryCraft` in the Writing section.
+- Click the `+` next to StoryCraft and follow the prompts.
+
+### Codex CLI
+
+StoryCraft is available for the Codex CLI.
+
+- Open the plugin search interface:
+
+  ```bash
+  /plugins
+  ```
+
+- Search for StoryCraft:
+
+  ```bash
+  storycraft
+  ```
+
+- Select `Install Plugin`.
+
+- Alternatively, copy `dist/AGENTS.md` and `dist/codex/` into your project root.
 
 ### Cursor
-In your novel workspace, copy the Cursor rules:
-```bash
-cp -r dist/.cursor /path/to/your/novel-project/
-```
-Cursor Agent automatically activates all 20 `.cursor/rules/*.mdc` files based on your writing context.
 
-### Claude Code
-Install the plugin or copy the pre-compiled instructions:
-```bash
-cp dist/CLAUDE.md /path/to/your/novel-project/
-cp -r dist/.claude /path/to/your/novel-project/
-```
+- In Cursor Agent chat, install from marketplace:
 
-### OpenAI Codex App & CLI
-Copy the Codex rules into your project root:
-```bash
-cp dist/AGENTS.md /path/to/your/novel-project/
-cp -r dist/codex /path/to/your/novel-project/
-```
+  ```text
+  /add-plugin storycraft
+  ```
+
+- Or copy the pre-compiled rules into your novel project:
+
+  ```bash
+  cp -r dist/.cursor /path/to/your/novel-project/
+  ```
+
+Cursor Agent automatically applies all 20 `.cursor/rules/*.mdc` rules during your writing sessions.
+
+### Devin CLI
+
+- Install the plugin from this repository:
+
+  ```bash
+  devin plugins install leapwithluvi/storycraft-skills
+  ```
+
+- Update to the latest version with:
+
+  ```bash
+  devin plugins update storycraft-skills
+  ```
+
+### Factory Droid
+
+- Register the marketplace:
+
+  ```bash
+  droid plugin marketplace add https://github.com/leapwithluvi/storycraft-skills
+  ```
+
+- Install the plugin:
+
+  ```bash
+  droid plugin install storycraft@storycraft
+  ```
 
 ### Gemini CLI
-Install the extension:
-```bash
-gemini extensions install https://github.com/leapwithluvi/storycraft-skills
-```
+
+- Install the extension:
+
+  ```bash
+  gemini extensions install https://github.com/leapwithluvi/storycraft-skills
+  ```
+
+- Update later:
+
+  ```bash
+  gemini extensions update storycraft
+  ```
+
+### GitHub Copilot CLI
+
+- Register the marketplace:
+
+  ```bash
+  copilot plugin marketplace add leapwithluvi/storycraft-marketplace
+  ```
+
+- Install the plugin:
+
+  ```bash
+  copilot plugin install storycraft@storycraft-marketplace
+  ```
+
+### Grok Build CLI
+
+- Install the plugin from xAI's official marketplace:
+
+  ```bash
+  grok plugin install storycraft@xai-official --trust
+  ```
+
+- Or open the marketplace in the TUI, search for StoryCraft, and install it:
+
+  ```text
+  /marketplace
+  ```
+
+### Kimi Code
+
+StoryCraft is available in Kimi Code's plugin marketplace.
+
+- Open Kimi Code's plugin manager:
+
+  ```text
+  /plugins
+  ```
+
+- Go to `Marketplace` > `StoryCraft` and install it.
+
+- Or install directly from this repository:
+
+  ```text
+  /plugins install https://github.com/leapwithluvi/storycraft-skills
+  ```
 
 ### OpenCode
-Follow the instructions in [`.opencode/INSTALL.md`](.opencode/INSTALL.md) or copy `dist/AGENTS.md` and `dist/codex/` into your OpenCode project directory.
 
----
+OpenCode uses its own plugin install; install StoryCraft separately even if you already use it in another harness.
 
-## ⚡ The Basic Workflow
+- Tell OpenCode:
 
-```
-[using-storycraft]  ──► Autonomous Project Diagnosis & Skill Router
-        │
-        ▼
-[novel-brainstorming]  ──► Socratic Intent Discovery, Theme & Tone Comps
-        │
-        ▼
-[novel-premise-hook]   ──► 4-Element Logline & Core Dramatic Question
-        │
-        ▼
-[novel-character-architect] + [novel-worldbuilder]  ──► Lie/Want/Need & World Rules
-        │
-        ▼
-[novel-genre-specialist] ──► Obligatory Scenes & Trope Subversion
-        │
-        ▼
-[novel-plot-architect] + [novel-twist-architect] ──► Macro Acts & Fair-Play Twists
-        │
-        ▼
-[novel-chapter-outline] ──► Granular Value Shifts (+/-) & Cliffhangers
-        │
-        ▼
-[novel-chapter-drafter] ──► Autonomous Chapter Drafting (Single or Batch)
-        │                 (Synthesizes Deep POV, Sensory & Subtext)
-        ▼
-[novel-continuity-checker] + [novel-pacing-doctor] ──► Forensic Wound & Pacing Audit
-        │
-        ▼
-[novel-session-memory] ──► Updates story-state.md & Generates Resume Bootstrap
-```
+  ```text
+  Fetch and follow instructions from https://raw.githubusercontent.com/leapwithluvi/storycraft-skills/refs/heads/main/.opencode/INSTALL.md
+  ```
 
----
+### Pi
 
-## 📚 What's Inside: The 20 Skills Library
-
-### Stage 0: Meta & Creative Discovery
-- **[`using-storycraft`](skills/using-storycraft/)** (`/using-storycraft`): Evaluates workspace state, diagnoses bottlenecks, and routes you to the exact next skill needed.
-- **[`novel-brainstorming`](skills/novel-brainstorming/)** (`/novel-brainstorming`): Conducts a Socratic interview to unearth emotional core, themes, tone comps, and ending visions before outlining.
-- **[`novel-session-memory`](skills/novel-session-memory/)** (`/novel-session-memory`): Checkpoints active chapters, injuries, and inventory in `story-state.md` to prevent AI context-window amnesia.
-
-### Stage 1: Ideation & World Architecture
-- **[`novel-premise-hook`](skills/novel-premise-hook/)** (`/novel-premise-hook`): Formulates the 4-Element Logline, Core Dramatic Question, and What-If escalator.
-- **[`novel-character-architect`](skills/novel-character-architect/)** (`/novel-character-architect`): Crafts the Lie Believed, Origin Wound (Ghost), Want vs. Need, and ensemble foils.
-- **[`novel-worldbuilder`](skills/novel-worldbuilder/)** (`/novel-worldbuilder`): Sanderson’s Laws of Magic, Iceberg Principle, and sensory ecology.
-- **[`novel-genre-specialist`](skills/novel-genre-specialist/)** (`/novel-genre-specialist`): Obligatory scenes, pacing ratios, and trope subversion across Fantasy, Sci-Fi, Mystery, Thriller, Romance, Horror, and Webnovels.
-
-### Stage 2: Plotting & Narrative Architecture
-- **[`novel-plot-architect`](skills/novel-plot-architect/)** (`/novel-plot-architect`): Three-Act Nine-Block, Dan Wells 7-Point, Midpoint Reversals, and Kishōtenketsu.
-- **[`novel-twist-architect`](skills/novel-twist-architect/)** (`/novel-twist-architect`): Fair-play clue planting, red herrings, Recontextualization twists, and Peripeteia & Anagnorisis.
-- **[`novel-chapter-outline`](skills/novel-chapter-outline/)** (`/novel-chapter-outline`): Chapter roadmaps with McKee Value Shifts (+/-), Swain's Scene/Sequel, and multi-POV coordination.
-
-### Stage 3: Scene & Chapter Drafting
-- **[`novel-chapter-drafter`](skills/novel-chapter-drafter/)** (`/novel-chapter-drafter`): Workhorse engine for drafting 2,500–4,500 word chapters in single or batch mode, reading state and prior chapters.
-- **[`novel-scene-beater`](skills/novel-scene-beater/)** (`/novel-scene-beater`): In Late / Out Early cutting, micro-tension injection, and "Yes, but / No, and" outcomes.
-- **[`novel-sensory-immersion`](skills/novel-sensory-immersion/)** (`/novel-sensory-immersion`): 5+1 sensory framework (sound, smell, tactile friction, temperature, proprioception) and defamiliarization.
-- **[`novel-deep-pov`](skills/novel-deep-pov/)** (`/novel-deep-pov`): Eliminates filter words (*she saw*, *he felt*), Gardner Level 5 psychic distance, and neurobiological reaction sequences.
-
-### Stage 4: Dialogue & Voice Styling
-- **[`novel-dialogue-subtext`](skills/novel-dialogue-subtext/)** (`/novel-dialogue-subtext`): Text vs. Subtext, conversational power dynamics, distinct character idiolects, and prop stage business.
-- **[`novel-prose-stylist`](skills/novel-prose-stylist/)** (`/novel-prose-stylist`): Gary Provost sentence cadence, muscular action verbs, precision nouns, and cliché execution.
-
-### Stage 5: Revision & Developmental Editing
-- **[`novel-pacing-doctor`](skills/novel-pacing-doctor/)** (`/novel-pacing-doctor`): Tension curve diagnosis, Act 2 middle repair, time dilation/compression, and ticking clocks.
-- **[`novel-structural-editor`](skills/novel-structural-editor/)** (`/novel-structural-editor`): Setup-and-Payoff matrix auditing, Chekhov’s Gun tracking, and Idiot Plot prevention.
-
-### Stage 6: Continuity & Story Bible
-- **[`novel-lore-bible`](skills/novel-lore-bible/)** (`/novel-lore-bible`): Single Source of Truth management for `story-bible.md`, relational character dossiers, and master timelines.
-- **[`novel-continuity-checker`](skills/novel-continuity-checker/)** (`/novel-continuity-checker`): 5-Vector forensic audits (biometrics, biological wound decay, inventory custody, spatial travel logistics).
-
----
-
-## 🧠 Solving AI Amnesia: The State Persistence Engine
-
-When drafting an 80,000+ word manuscript, AI context windows inevitably truncate. StoryCraft solves memory loss via two dedicated files generated by `npx storycraft init`:
-
-1. **`story-bible.md` (Permanent Canon)**: The immutable constitution of your characters, world rules, magic costs, and chronological master timeline.
-2. **`story-state.md` (Living Checkpoint)**: Automatically updated after every chapter. Tracks active injuries, inventory deltas, and generates the **Next Session Bootstrap Prompt**:
-
-```markdown
-> "We are writing 'The Iron Meridian'. Currently drafting Chapter 8, Scene 1 from the Deep POV of Kira Vance. In the previous scene, Kira secured the Obsidian Dagger of Voros from the subterranean vault, but suffered second-degree frostbite on her right hand. She is now standing on the southern glass terrace with 15 minutes before the perimeter cordon seals. Refer to story-state.md and story-bible.md. Continue drafting from Beat 1: navigating the grease-slick roof gutters."
-```
-
-Paste this single prompt into any fresh AI session, and your agent resumes writing with 100% factual accuracy in less than five seconds.
-
----
-
-## 🏛️ Literary Craft Philosophy
-
-- **Show, Don't Tell**: If a character is terrified, their diaphragm locks and their molars ache; they don't "feel very scared."
-- **Fair-Play Twists**: Never lie to the reader. Plant clues under emotional distraction and linguistic camouflage so the reveal feels both surprising and inevitable.
-- **Sanderson's Laws of Magic**: Limitations, physical costs, and vulnerabilities create more drama than raw infinite power.
-- **Gary Provost Sentence Rhythm**: Alternate 3-word punchy sentences with rolling, lyrical compound clauses to make prose sing acoustically.
-- **Neurobiological Sequence**: Characters flinch and experience visceral somatic shocks before their intellectual brains rationalize what just happened.
-
----
-
-## 🛠️ CLI Reference
-
-StoryCraft includes an ultra-lightweight, zero-dependency CLI:
+Install StoryCraft as a Pi package from this repository:
 
 ```bash
-# Initialize templates (story-state.md, story-bible.md, manuscript/chapter-01.md)
-node bin/storycraft.mjs init ./my-new-novel
-
-# List all 20 skills across all 6 stages
-node bin/storycraft.mjs list
-
-# Validate all SKILL.md files against mandatory literary sections
-node bin/storycraft.mjs test
-
-# Sync/compile skills into all platform formats (Cursor, Claude, Codex, Antigravity)
-node bin/storycraft.mjs sync --target all
-
-# Scaffold a brand-new skill template
-node bin/storycraft.mjs new romance-rivalry
+pi install git:github.com/leapwithluvi/storycraft-skills
 ```
 
----
+For local development, run Pi with this checkout loaded as a temporary package:
 
-## 🤝 Contributing
+```bash
+pi -e /path/to/storycraft-skills
+```
 
-We welcome contributions from fiction authors, editors, narrative designers, and prompt architects!
-- Read [**`CONTRIBUTING.md`**](CONTRIBUTING.md) for skill authoring standards.
-- Run `npm test` to validate formatting before submitting Pull Requests.
-- Explore adding Genre Expansion Packs (Cyberpunk, Grimdark, Whodunit, Romantasy).
+### Qwen Code
 
----
+Qwen Code installs plugins from Claude Code marketplaces directly.
 
-## 📄 License
+- Install the plugin from this repository, and pick `storycraft` when prompted:
 
-Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
+  ```bash
+  qwen extensions install leapwithluvi/storycraft-skills
+  ```
+
+- Update later:
+
+  ```bash
+  qwen extensions update storycraft
+  ```
+
+### Hermes Agent
+
+Install StoryCraft as a Hermes plugin from this repository:
+
+```bash
+hermes plugins install leapwithluvi/storycraft-skills --enable
+```
+
+### Muse
+
+StoryCraft is available as a native Muse plugin.
+
+- Install from a local checkout:
+
+  ```bash
+  muse plugins install ./
+  muse plugins approve storycraft
+  ```
+
+- Or clone and install:
+
+  ```bash
+  git clone https://github.com/leapwithluvi/storycraft-skills.git
+  muse plugins install ./storycraft-skills
+  muse plugins approve storycraft
+  ```
+
+## Publishing Formats and Target Platforms
+
+Fiction is not one-size-fits-all. Publishing format dictates word count targets, pacing rhythms, and cliffhanger density. StoryCraft adapts its drafting and chapter outline engines based on your declared target format in `story-state.md` and `story-bible.md`:
+
+### 1. Webnovel (Royal Road, Webnovel.com, Wuxiaworld, Wattpad, Kakao)
+- **Chapter Length**: 1,500 to 2,200 words.
+- **Pacing Cadence**: Rapid progression, early dopamine hooks, low travel bloat.
+- **Scene/Sequel Ratio**: 80% proactive conflict / 20% compressed sequel.
+- **Ending Hook**: Obligatory micro-cliffhanger or status/loot reveal on every chapter without exception.
+- **Special Features**: Support for LitRPG status tables, cultivation ranks, and reader comment engagement hooks.
+
+### 2. Traditional Commercial Novel (Trade Publishing, Kindle Direct)
+- **Chapter Length**: 2,800 to 4,500 words. Total length: 75,000 to 110,000 words.
+- **Pacing Cadence**: Three-Act Nine-Block or Dan Wells 7-Point structure.
+- **Interiority**: Deep character psychological transformation (Want vs. Need, The Lie Believed).
+- **Ending Hook**: Value shifts (+/-), thematic resonance, or unresolved questions driving act momentum.
+
+### 3. Light Novel & Serial Fiction (Substack, Patreon, Radish)
+- **Chapter Length**: 1,800 to 3,000 words. Total length: 40,000 to 60,000 words.
+- **Pacing Cadence**: Dialogue-forward, dynamic kinetic scene beats, distinct character voice idiolects.
+- **Episodic Structure**: Each chapter features a self-contained micro-climax while contributing to the volume arc.
+
+## The Basic Workflow
+
+1. **using-storycraft** - Activates at session start. Inspects project state, diagnoses bottlenecks, and routes you to the exact next skill needed.
+
+2. **novel-brainstorming** - Activates before outlining or drafting. Draws out your intent, comp titles, tone, and emotional ending vision through Socratic questions.
+
+3. **novel-premise-hook** - Formulates the irreducible 4-Element Logline and the binary Core Dramatic Question that fuels the entire novel.
+
+4. **novel-character-architect** & **novel-worldbuilder** - Constructs the protagonist's Lie, Origin Wound (Ghost), and Want vs. Need, alongside setting sensory ecology and Sanderson's Laws of Magic.
+
+5. **novel-genre-specialist** - Calibrates obligatory scenes, pacing expectations, and trope subversions for your specific genre and publishing format.
+
+6. **novel-plot-architect** & **novel-twist-architect** - Maps macro acts (Three-Act / 7-Point), the tectonic Midpoint Shift, fair-play clue planting, and the 75% Dark Night of the Soul.
+
+7. **novel-chapter-outline** - Decomposes acts into chapter-by-chapter roadmaps with McKee Value Shifts (+/-) and closing cliffhangers.
+
+8. **novel-chapter-drafter** - Executes full chapter or multi-chapter batch drafting. Ingests state, applies Deep POV, sensory textures, and subtextual dialogue into `manuscript/chapter-[N].md`.
+
+9. **novel-continuity-checker** & **novel-pacing-doctor** - Forensic audit of character injuries, inventory custody, and timeline distances; repairs saggy middles and ticking clocks.
+
+10. **novel-session-memory** - Checkpoints project deltas into `story-state.md` and generates the Next Session Bootstrap Prompt to eliminate context-window amnesia.
+
+The agent checks for relevant skills before any task. Mandatory workflows, not suggestions.
+
+## When Something Goes Wrong
+
+Sometimes an AI session misbehaves: the agent produces generic melodramatic dialogue, forgets a character's broken arm from the previous chapter, uses sensory filter words ("she saw"), or stalls in an endless Act 2 travel loop.
+
+Ask your agent to "audit continuity and recent session decisions" and it will invoke `novel-continuity-checker` and `novel-structural-editor`. The skill cross-references recent chapter prose against `story-bible.md`, identifies timeline, inventory, or biometric violations, and provides line-by-line redline corrections.
+
+To recover from a reset session or token truncation, invoke `novel-session-memory` or paste the Next Session Bootstrap Prompt located at the bottom of your `story-state.md` file.
+
+## Community
+
+StoryCraft is built by Leap With Luvi and the open-source fiction engineering community.
+
+- **Issues**: https://github.com/leapwithluvi/storycraft-skills/issues
+- **Discussions**: https://github.com/leapwithluvi/storycraft-skills/discussions
+
+## What's Inside
+
+### Skills Library
+
+#### Meta and Discovery
+- **using-storycraft** - Autonomous project diagnostic auditor and skill router.
+- **novel-brainstorming** - Socratic interview method to uncover core themes, emotional catharsis, and comp titles before outlining.
+- **novel-session-memory** - Manages `story-state.md`, tracks active narrative coordinates, and generates zero-latency resume bootstrap prompts.
+
+#### Ideation and Worldbuilding
+- **novel-premise-hook** - 4-Element Logline formula, Core Dramatic Question, and What-If escalation ladder.
+- **novel-character-architect** - The Lie The Character Believes, Origin Wound (Ghost), Want vs. Need, and ensemble foil architecture.
+- **novel-worldbuilder** - Sanderson's Laws of Magic, Iceberg Principle, and P.E.S.T.L.E. sensory ecology framework.
+- **novel-genre-specialist** - Obligatory scenes, genre pacing ratios, and trope subversion across Fantasy, Sci-Fi, Mystery, Thriller, Romance, Horror, Historical, and Webnovels.
+
+#### Plotting and Structure
+- **novel-plot-architect** - Three-Act Nine-Block, Dan Wells 7-Point, Midpoint Reversals, and Kishotenketsu.
+- **novel-twist-architect** - Fair-Play Clue Protocol, Recontextualization mechanics, red herring architecture, and Peripeteia & Anagnorisis.
+- **novel-chapter-outline** - Deconstructs acts into chapter beats with Robert McKee Value Shifts (+/-), Swain's Scene/Sequel balance, and multi-POV scheduling.
+
+#### Drafting and Scene Craft
+- **novel-chapter-drafter** - Autonomous single-chapter and multi-chapter batch drafting workhorse that reads state, bible, and past manuscript chapters.
+- **novel-scene-beater** - Jim Butcher Scene & Sequel dynamics, In Late / Out Early cutting, micro-tension injection, and "Yes, but / No, and" outcomes.
+- **novel-sensory-immersion** - 5+1 sensory architecture (sound, smell, touch, temperature, somatics), defamiliarization, and objective correlative.
+- **novel-deep-pov** - Eliminates sensory filter words ("she saw", "he heard"), Gardner Level 5 psychic distance, and neurobiological reaction sequences.
+
+#### Dialogue and Prose Style
+- **novel-dialogue-subtext** - Text vs. Subtext, conversational power dynamics, distinct character idiolect matrices, and prop stage business.
+- **novel-prose-stylist** - Gary Provost sentence cadence, active verb surgery, precision nouns, and cliché elimination.
+
+#### Revision and Editing
+- **novel-pacing-doctor** - Saw-tooth tension curve diagnosis, time dilation vs. compression, and ticking clock injection.
+- **novel-structural-editor** - Setup-and-Payoff matrices, Chekhov's Gun auditing, and Idiot Plot prevention.
+
+#### Continuity and Canon
+- **novel-lore-bible** - Single Source of Truth `story-bible.md` management, relational taxonomies, and master timelines.
+- **novel-continuity-checker** - 5-Vector forensic audits covering biometrics, biological wound decay curves, inventory custody, and spatial travel logistics.
+
+## Philosophy
+
+- **Show, Don't Tell**: Emotion is experienced through somatic visceral shocks, objective correlatives, and physical choices—never through detached narration.
+- **Fair-Play Narrative**: Plot twists must be seeded in plain sight under linguistic and emotional camouflage so that every reveal is shocking yet inevitable.
+- **Cost-Governed Systems**: Limitations and consequences create more dramatic pressure than raw power.
+- **Rhythmic Prose**: Sentences must have acoustic musical variety; alternating punchy fragments with lyrical periods.
+- **Strict Continuity**: Physical wounds do not vanish overnight; characters do not carry infinite ammunition or teleport across continents.
+
+## Contributing
+
+The general contribution process for StoryCraft is below:
+
+1. Fork the repository.
+2. Switch to the `dev` or feature branch (`git checkout -b feat/my-new-skill`).
+3. Follow `skills/writing-skills/SKILL.md` or run `node bin/storycraft.mjs new <skill-name>` to scaffold new skills.
+4. Ensure all 9 mandatory sections from the specification are fully populated with deep literary craft.
+5. Run tests and sync multiplatform targets:
+   ```bash
+   npm test
+   node bin/storycraft.mjs sync --target all
+   ```
+6. Submit a Pull Request with a clear summary of the literary methodologies introduced.
+
+See `CONTRIBUTING.md` for the complete contribution guide and style standards.
+
+## Updating
+
+StoryCraft updates are dependent on your agent harness, but can be updated via CLI or git:
+
+```bash
+git pull origin main
+node bin/storycraft.mjs sync --target all
+```
+
+## License
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+## State persistence telemetry
+
+Because skills and plugins do not transmit telemetry, StoryCraft relies entirely on local markdown state files (`story-state.md` and `story-bible.md`) stored inside your novel project. No private story data, prompt text, character dossiers, or manuscript prose is ever transmitted to external servers. It is 100% private, local, and confidential.

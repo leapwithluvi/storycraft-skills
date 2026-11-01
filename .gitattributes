@@ -1,4 +1,21 @@
 * text=auto eol=lf
 *.md text eol=lf
 *.mjs text eol=lf
+*.js text eol=lf
 *.json text eol=lf
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.txt text eol=lf
+
+# Binary files — treat as binary, prevent diff/merge corruption
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.svg binary
+*.ico binary
+*.webp binary
+
+# Prevent accidental executable commits
+*.md -diff=lockfile

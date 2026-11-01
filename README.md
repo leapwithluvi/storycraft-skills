@@ -34,6 +34,7 @@ StoryCraft is a complete fiction writing methodology for your writing and coding
 - [What's Inside](#whats-inside)
 - [Philosophy](#philosophy)
 - [Contributing](#contributing)
+- [Security](#security)
 - [Updating](#updating)
 - [License](#license)
 - [State persistence telemetry](#state-persistence-telemetry)
@@ -436,6 +437,18 @@ The general contribution process for StoryCraft is below:
 6. Submit a Pull Request with a clear summary of the literary methodologies introduced.
 
 See `CONTRIBUTING.md` for the complete contribution guide and style standards.
+
+## Security
+
+StoryCraft operates under a **zero-dependency, zero-network, local-only** security model:
+
+- **Zero external dependencies**: No `node_modules`, no third-party packages. All scripts use Node.js built-in modules exclusively.
+- **Zero network access**: No script or skill file makes any network call. No `fetch()`, no `curl`, no `wget`.
+- **Zero telemetry**: All state files (`story-state.md`, `story-bible.md`, manuscript chapters) remain 100% local. Nothing is transmitted to external servers.
+- **Automated security scanning**: CI runs integrity checks on every push and PR, scanning for network calls, code execution vectors, obfuscation patterns, XSS injection, and secret material.
+- **Pinned CI actions**: All GitHub Actions are pinned to immutable SHA hashes to prevent supply chain attacks.
+
+To report a vulnerability, see `SECURITY.md` for the responsible disclosure process. Do not open public issues for security reports.
 
 ## Updating
 

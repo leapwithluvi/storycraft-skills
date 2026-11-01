@@ -342,13 +342,28 @@ function syncToCodex(skills, outDir) {
 }
 
 function syncToAntigravity(skills, outDir) {
-  const agentsDir = join(outDir, '.agents', 'skills');
-  ensureDir(agentsDir);
+  const skillsDir = join(outDir, '.agents', 'skills');
+  const workflowsDir = join(outDir, '.agents', 'workflows');
+  ensureDir(skillsDir);
+  ensureDir(workflowsDir);
 
   for (const skill of skills) {
-    const targetDir = join(agentsDir, skill.name);
+    const targetDir = join(skillsDir, skill.name);
     ensureDir(targetDir);
     writeFileSync(join(targetDir, 'SKILL.md'), skill.raw);
+
+    // Generate workflow file for slash-command invocation (e.g. /novel-character-architect)
+    const workflowContent = `# /${skill.name} Workflow
+
+${skill.description}
+
+## Activated Skill Instructions
+
+When this workflow or slash command is triggered, the agent must adopt the persona, methodology, and execution protocol defined in [${skill.name}](file://.agents/skills/${skill.name}/SKILL.md):
+
+${skill.body}
+`;
+    writeFileSync(join(workflowsDir, `${skill.name}.md`), workflowContent);
   }
   return skills.length;
 }

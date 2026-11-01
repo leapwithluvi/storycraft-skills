@@ -1,0 +1,35 @@
+{
+  "name": "storycraft-skills",
+  "version": "1.0.0",
+  "description": "Professional AI agent skills for novel writing craft — universal multiplatform compatibility",
+  "type": "module",
+  "bin": {
+    "storycraft": "./bin/storycraft.mjs"
+  },
+  "scripts": {
+    "test": "node bin/storycraft.mjs test",
+    "sync": "node bin/storycraft.mjs sync --target all",
+    "list": "node bin/storycraft.mjs list"
+  },
+  "keywords": [
+    "ai-agent",
+    "novel-writing",
+    "creative-writing",
+    "agent-skills",
+    "cursor",
+    "claude",
+    "codex",
+    "antigravity",
+    "fiction",
+    "storytelling"
+  ],
+  "author": "Luvi Aprilyansyah Gabriel",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leapwithluvi/storycraft-skills"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

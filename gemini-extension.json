@@ -1,0 +1,8 @@
+{
+  "name": "storycraft",
+  "version": "1.0.0",
+  "displayName": "StoryCraft Skills",
+  "description": "Professional fiction writing and novel architecture skills for Gemini CLI and Antigravity.",
+  "author": "leapwithluvi",
+  "entrypoint": "CLAUDE.md"
+}

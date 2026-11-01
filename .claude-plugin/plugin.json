@@ -1,0 +1,7 @@
+{
+  "name": "storycraft-skills",
+  "version": "1.0.0",
+  "description": "20 specialized literary craft skills and session persistence for fiction writers using Claude Code.",
+  "rulesDir": ".claude/rules",
+  "entrypoint": "CLAUDE.md"
+}

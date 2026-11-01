@@ -123,8 +123,8 @@ function validateMeta(meta, skillName) {
   if (missing.length > 0) {
     errors.push(`Missing frontmatter fields: ${missing.join(', ')}`);
   }
-  if (meta.name && !meta.name.startsWith('novel-')) {
-    errors.push(`Skill name must start with "novel-": got "${meta.name}"`);
+  if (meta.name && meta.name !== 'using-storycraft' && !meta.name.startsWith('novel-')) {
+    errors.push(`Skill name must start with "novel-" or be "using-storycraft": got "${meta.name}"`);
   }
   const validCategories = ['ideation', 'plotting', 'drafting', 'style', 'revision', 'continuity', 'auxiliary'];
   if (meta.category && !validCategories.includes(meta.category)) {
@@ -426,6 +426,16 @@ function cmdInit(targetDir) {
       copyFileSync(srcPath, destPath);
       console.log(`  ${C.green}✓${C.reset} Created ${dest}`);
     }
+  }
+
+  // Create manuscript folder and chapter 1 scaffold
+  const manuscriptDir = join(dir, 'manuscript');
+  ensureDir(manuscriptDir);
+  const ch1Dest = join(manuscriptDir, 'chapter-01.md');
+  const chSrc = join(TEMPLATES_DIR, 'chapter.template.md');
+  if (!existsSync(ch1Dest) && existsSync(chSrc)) {
+    copyFileSync(chSrc, ch1Dest);
+    console.log(`  ${C.green}✓${C.reset} Created manuscript/chapter-01.md`);
   }
 
   console.log(`\n${C.green}Novel workspace ready at ${C.bold}${dir}${C.reset}\n`);

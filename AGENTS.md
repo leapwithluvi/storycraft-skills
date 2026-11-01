@@ -1,7 +1,16 @@
 # StoryCraft Skills — Novel Writing Agent Instructions
 
 > Professional AI agent skills for novel writing craft.
+> 23 specialized skills across the full fiction writing pipeline.
 > See individual files in `skills/<skill-name>/SKILL.md` for full instructions.
+
+## using-storycraft
+
+Use at the start of any novel-writing session or when the author is unsure what step to take next — inspects project state, diagnoses narrative bottlenecks, routes execution, and manages the end-to-end autonomous novel pipeline with hard-gate approvals.
+
+Full instructions: `skills/using-storycraft/SKILL.md`
+
+---
 
 ## novel-brainstorming
 
@@ -19,19 +28,11 @@ Full instructions: `skills/novel-session-memory/SKILL.md`
 
 ---
 
-## using-storycraft
+## novel-market-analyst
 
-Use at the start of any novel-writing session or when the author is unsure what step to take next — inspects project state, diagnoses narrative bottlenecks, and routes execution to the exact appropriate StoryCraft skill.
+Use to analyze commercial viability, reader demographics, and genre trends across physical print and digital novel platforms (Royal Road, Webnovel, Wattpad, Amazon KDP, KBM/Fizzo, Substack) — formulates platform positioning, monetization models, and conducts competitive market research.
 
-Full instructions: `skills/using-storycraft/SKILL.md`
-
----
-
-## novel-character-architect
-
-Use when designing complex, psychologically coherent characters — constructs the Want vs. Need engine, the Lie They Believe, the Origin Wound (Ghost), internal contradictions, and foil dynamics to sustain narrative arcs.
-
-Full instructions: `skills/novel-character-architect/SKILL.md`
+Full instructions: `skills/novel-market-analyst/SKILL.md`
 
 ---
 
@@ -43,14 +44,6 @@ Full instructions: `skills/novel-genre-specialist/SKILL.md`
 
 ---
 
-## novel-market-analyst
-
-Use to analyze commercial viability, reader demographics, and genre trends across physical print and digital novel platforms (Royal Road, Webnovel, Wattpad, Amazon KDP, KBM/Fizzo, Substack) — formulates platform positioning, monetization models, and conducts competitive market research.
-
-Full instructions: `skills/novel-market-analyst/SKILL.md`
-
----
-
 ## novel-premise-hook
 
 Use when developing the foundational concept for a novel — crafts high-concept premises, compelling loglines, central dramatic questions, and opening hooks that seize reader attention from page one.
@@ -59,19 +52,19 @@ Full instructions: `skills/novel-premise-hook/SKILL.md`
 
 ---
 
+## novel-character-architect
+
+Use when designing complex, psychologically coherent characters — constructs the Want vs. Need engine, the Lie They Believe, the Origin Wound (Ghost), internal contradictions, and foil dynamics to sustain narrative arcs.
+
+Full instructions: `skills/novel-character-architect/SKILL.md`
+
+---
+
 ## novel-worldbuilder
 
 Use when designing fictional worlds, settings, magic systems, technology levels, social hierarchies, and sensory environments for a novel — ensures worlds feel lived-in, organically integrated into plot, and free of encyclopedic info-dumps.
 
 Full instructions: `skills/novel-worldbuilder/SKILL.md`
-
----
-
-## novel-chapter-outline
-
-Use when decomposing structural acts into granular, chapter-by-chapter roadmaps — defines chapter goals, points of view, scene/sequel balance, emotional shifts (+/-), and irresistible cliffhangers or thematic resonances.
-
-Full instructions: `skills/novel-chapter-outline/SKILL.md`
 
 ---
 
@@ -91,6 +84,22 @@ Full instructions: `skills/novel-twist-architect/SKILL.md`
 
 ---
 
+## novel-mega-serial-architect
+
+Use to engineer, track, and maintain narrative consistency across ultra-long serial fiction (500 to 5,000+ chapters) — prevents memory hallucination, power inflation, dropped subplots, and character drift via hierarchical recursive ledgers.
+
+Full instructions: `skills/novel-mega-serial-architect/SKILL.md`
+
+---
+
+## novel-chapter-outline
+
+Use when decomposing structural acts into granular, chapter-by-chapter roadmaps — defines chapter goals, points of view, scene/sequel balance, emotional shifts (+/-), and irresistible cliffhangers or thematic resonances.
+
+Full instructions: `skills/novel-chapter-outline/SKILL.md`
+
+---
+
 ## novel-chapter-drafter
 
 Use when drafting full-length chapters or multi-chapter batches — autonomously ingests story-state.md, story-bible.md, and prior manuscript files to compose cohesive 2,500–4,500 word chapters with Deep POV, sensory immersion, and subtextual dialogue.
@@ -99,19 +108,19 @@ Full instructions: `skills/novel-chapter-drafter/SKILL.md`
 
 ---
 
-## novel-deep-pov
-
-Use when drafting or editing prose to eliminate psychic distance — removes sensory filter words ('she saw', 'he felt', 'she wondered'), merges authorial voice into character consciousness, and grounds perceptions in somatic immediacy.
-
-Full instructions: `skills/novel-deep-pov/SKILL.md`
-
----
-
 ## novel-scene-beater
 
 Use when drafting or revising granular scene beats within a chapter — applies Jim Butcher's Scene & Sequel dynamics, 'In Late, Out Early' editing, micro-tension injection, and conflict escalation.
 
 Full instructions: `skills/novel-scene-beater/SKILL.md`
+
+---
+
+## novel-deep-pov
+
+Use when drafting or editing prose to eliminate psychic distance — removes sensory filter words ('she saw', 'he felt', 'she wondered'), merges authorial voice into character consciousness, and grounds perceptions in somatic immediacy.
+
+Full instructions: `skills/novel-deep-pov/SKILL.md`
 
 ---
 
@@ -136,6 +145,14 @@ Full instructions: `skills/novel-dialogue-subtext/SKILL.md`
 Use when polishing draft prose for musical cadence, sentence-length variety, active verb vigor, precision nouns, and metaphorical freshness — eliminates verbal bloat, clichés, and mechanical phrasing.
 
 Full instructions: `skills/novel-prose-stylist/SKILL.md`
+
+---
+
+## novel-master-reviewer
+
+Use to conduct exhaustive, brutally honest developmental critiques across 40 craft and commercial vectors for single chapters, multi-chapter batches, complete arcs, or full volumes — benchmarks against 10–15 industry-leading titles.
+
+Full instructions: `skills/novel-master-reviewer/SKILL.md`
 
 ---
 

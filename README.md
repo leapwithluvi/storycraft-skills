@@ -104,7 +104,7 @@ mkdir -p /path/to/your/novel-project/.agents/skills
 cp -r skills/* /path/to/your/novel-project/.agents/skills/
 ```
 
-All 21 skills are immediately available via native chat slash commands (e.g. `/using-storycraft`, `/novel-brainstorming`, `/novel-chapter-drafter`).
+All 23 skills are immediately available via native chat slash commands (e.g. `/using-storycraft`, `/novel-brainstorming`, `/novel-chapter-drafter`).
 
 ### Codex App
 
@@ -149,7 +149,7 @@ StoryCraft is available for the Codex CLI.
   cp -r skills/ /path/to/your/novel-project/skills/
   ```
 
-Cursor Agent automatically applies all 21 skills during your writing sessions.
+Cursor Agent automatically applies all 23 skills during your writing sessions.
 
 ### Devin CLI
 
@@ -401,10 +401,12 @@ StoryCraft is built by Leap With Luvi and the open-source fiction engineering co
 #### Revision and Editing
 - **novel-pacing-doctor** - Saw-tooth tension curve diagnosis, time dilation vs. compression, and ticking clock injection.
 - **novel-structural-editor** - Setup-and-Payoff matrices, Chekhov's Gun auditing, and Idiot Plot prevention.
+- **novel-master-reviewer** - Quad-persona brutally honest developmental audit across 40 craft and commercial vectors, benchmarked against 10-15 industry-leading titles. Supports per-chapter, multi-chapter batch, arc, and full volume review scopes.
 
 #### Continuity and Canon
 - **novel-lore-bible** - Single Source of Truth `story-bible.md` management, relational taxonomies, and master timelines.
 - **novel-continuity-checker** - 5-Vector forensic audits covering biometrics, biological wound decay curves, inventory custody, and spatial travel logistics.
+- **novel-mega-serial-architect** - Hierarchical recursive ledger system for ultra-long serial fiction (500-5,000+ chapters). Prevents memory hallucination, power inflation, dropped subplots, and character drift via volume/arc/chapter ledgers and anti-hallucination sentinel protocols.
 
 ## Philosophy
 

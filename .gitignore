@@ -1,62 +1,36 @@
-# Node dependencies and package manager artifacts
+# Package manager and dependencies
 node_modules/
 package-lock.json
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-.pnpm-store/
+*.log
 
-# Git and worktree artifacts
+# Git worktrees and private working state
 .worktrees/
 .private-journal/
 
-# Environment variables and local secrets
-.env
-.env.local
-.env.*.local
-*.env
-
 # Operating system files
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
 
-# IDE, editor, and language server caches
+# Editor and temporary files
+*.swp
+*.swo
+*~
+*.bak
 .idea/
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
-*.swp
-*.swo
-*.swn
-*~
-*.bak
-*.sublime-project
-*.sublime-workspace
 
-# Testing and coverage artifacts
+# Test, scratch, and evaluation directories
 coverage/
-.nyc_output/
-*.lcov
-
-# Temporary build, cache, scratch, and evaluation directories
-dist/
 scratch/
 tmp/
 temp/
 evals/
 triage/
-*.tmp
-*.log
-.eslintcache
-.stylelintcache
+dist/
 
-# Python (if running local test scripts or linters)
+# Python test caches
 __pycache__/
 *.pyc
 *.pyo

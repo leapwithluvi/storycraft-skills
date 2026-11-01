@@ -6,7 +6,7 @@ Initial release of StoryCraft Skills: a complete fiction writing methodology and
 
 ### Highlights
 
-- **21 Specialized Fiction Skills**: Complete literary pipeline spanning Stage 0 (Meta & Ideation) through Stage 6 (Continuity & Story Bible).
+- **23 Specialized Fiction Skills**: Complete literary pipeline spanning Stage 0 (Meta & Ideation) through Stage 6 (Continuity & Story Bible).
 - **Zero-Latency State Persistence**: Solves LLM context-window truncation and memory loss via `story-state.md` checkpoints and the Next Session Bootstrap Prompt.
 - **Autonomous Chapter Drafter**: Single and multi-chapter batch drafting engine (`novel-chapter-drafter`) that ingests project state and prior chapter files.
 - **Zero-Dependency Validation Suite**: `scripts/validate-skills.mjs` and native Node.js tests verify all skills against strict literary craft standards with zero third-party dependencies.
@@ -44,7 +44,9 @@ Initial release of StoryCraft Skills: a complete fiction writing methodology and
 #### Stage 5: Revision & Developmental Editing
 - `novel-pacing-doctor`: Tension curve analysis, Act 2 middle repair, time dilation/compression, and ticking clocks.
 - `novel-structural-editor`: Setup-and-Payoff matrix auditing, Chekhov's Gun tracking, and Idiot Plot prevention.
+- `novel-master-reviewer`: Quad-persona brutally honest developmental audit across 40 craft and commercial vectors, benchmarked against 10-15 industry-leading titles per chapter, arc, or volume.
 
 #### Stage 6: Continuity & Story Bible
 - `novel-lore-bible`: Single Source of Truth `story-bible.md` management and relational taxonomies.
 - `novel-continuity-checker`: 5-vector forensic audits (biometrics, wound decay, inventory custody, spatial travel).
+- `novel-mega-serial-architect`: Hierarchical recursive ledger system and anti-hallucination sentinels for ultra-long serial fiction (500-5,000+ chapters).

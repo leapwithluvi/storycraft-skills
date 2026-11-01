@@ -1,6 +1,6 @@
 # StoryCraft Skills — Quickstart Guide for Authors
 
-Welcome to StoryCraft Skills. This guide walks you through setting up a professional novel workspace, selecting your target publishing format, and drafting your chapters using the 21-skill pipeline.
+Welcome to StoryCraft Skills. This guide walks you through setting up a professional novel workspace, selecting your target publishing format, and drafting your chapters using the 23-skill pipeline.
 
 ---
 

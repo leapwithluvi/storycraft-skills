@@ -33,7 +33,7 @@ storycraft-skills/
 ├── docs/                        # Architecture, quickstart, and design specs
 ├── scripts/                     # Developer utilities (validate-skills.mjs, bump-version.sh)
 ├── tests/                       # Automated validation and verification test suite
-├── skills/                      # 21 Canonical Skills (Single Source of Truth)
+├── skills/                      # 23 Canonical Skills (Single Source of Truth)
 │   ├── novel-brainstorming/
 │   ├── novel-chapter-drafter/
 │   ├── novel-chapter-outline/
@@ -44,6 +44,8 @@ storycraft-skills/
 │   ├── novel-genre-specialist/
 │   ├── novel-lore-bible/
 │   ├── novel-market-analyst/
+│   ├── novel-master-reviewer/
+│   ├── novel-mega-serial-architect/
 │   ├── novel-pacing-doctor/
 │   ├── novel-plot-architect/
 │   ├── novel-premise-hook/

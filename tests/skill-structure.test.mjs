@@ -10,8 +10,8 @@ describe('StoryCraft Skills Validation Suite', async () => {
   const entries = await readdir(SKILLS_DIR, { withFileTypes: true });
   const skillDirs = entries.filter(e => e.isDirectory()).map(e => e.name).sort();
 
-  it('should contain all 21 specialized novel-writing skills', () => {
-    assert.strictEqual(skillDirs.length, 21, `Expected 21 skills, found ${skillDirs.length}`);
+  it('should contain all 23 specialized novel-writing skills', () => {
+    assert.strictEqual(skillDirs.length, 23, `Expected 23 skills, found ${skillDirs.length}`);
   });
 
   for (const skillName of skillDirs) {

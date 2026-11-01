@@ -1,0 +1,6 @@
+{
+  "name": "storycraft",
+  "version": "1.0.0",
+  "description": "Professional novel writing skills for Devin CLI and agent.",
+  "entrypoint": "AGENTS.md"
+}

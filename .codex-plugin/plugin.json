@@ -1,0 +1,6 @@
+{
+  "name": "storycraft-skills",
+  "version": "1.0.0",
+  "description": "Professional novel writing skills for OpenAI Codex App and Codex CLI.",
+  "entrypoint": "AGENTS.md"
+}

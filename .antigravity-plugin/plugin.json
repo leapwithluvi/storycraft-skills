@@ -1,0 +1,41 @@
+{
+  "name": "storycraft",
+  "version": "1.0.0",
+  "displayName": "StoryCraft Skills for Novels",
+  "description": "Professional novel writing methodology and 20 specialized literary craft skills for AI coding agents.",
+  "author": "leapwithluvi",
+  "homepage": "https://github.com/leapwithluvi/storycraft-skills",
+  "repository": "https://github.com/leapwithluvi/storycraft-skills.git",
+  "license": "MIT",
+  "keywords": [
+    "novel",
+    "fiction",
+    "creative-writing",
+    "storytelling",
+    "skills",
+    "antigravity"
+  ],
+  "skills": [
+    "skills/using-storycraft",
+    "skills/novel-brainstorming",
+    "skills/novel-session-memory",
+    "skills/novel-premise-hook",
+    "skills/novel-character-architect",
+    "skills/novel-worldbuilder",
+    "skills/novel-genre-specialist",
+    "skills/novel-market-analyst",
+    "skills/novel-plot-architect",
+    "skills/novel-twist-architect",
+    "skills/novel-chapter-outline",
+    "skills/novel-chapter-drafter",
+    "skills/novel-scene-beater",
+    "skills/novel-sensory-immersion",
+    "skills/novel-deep-pov",
+    "skills/novel-dialogue-subtext",
+    "skills/novel-prose-stylist",
+    "skills/novel-pacing-doctor",
+    "skills/novel-structural-editor",
+    "skills/novel-continuity-checker",
+    "skills/novel-lore-bible"
+  ]
+}

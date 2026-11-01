@@ -1,0 +1,6 @@
+{
+  "name": "storycraft",
+  "version": "1.0.0",
+  "description": "StoryCraft novel writing skills for Hermes Agent.",
+  "skillsDir": "skills"
+}

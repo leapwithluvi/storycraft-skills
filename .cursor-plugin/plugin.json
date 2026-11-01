@@ -1,0 +1,6 @@
+{
+  "name": "storycraft-skills",
+  "version": "1.0.0",
+  "description": "Professional novel-craft skills for Cursor Agent — includes 20 craft skills, deep POV, and session persistence.",
+  "rulesDir": ".cursor/rules"
+}

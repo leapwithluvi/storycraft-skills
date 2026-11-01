@@ -1,5 +1,9 @@
 # StoryCraft
 
+<p align="center">
+  <img src="assets/storycraft-logo.jpg" alt="StoryCraft Logo" width="280" />
+</p>
+
 StoryCraft is a complete fiction writing methodology for your writing and coding agents, built on top of a set of composable literary craft skills and some initial instructions that make sure your agent uses them.
 
 ## Table of Contents

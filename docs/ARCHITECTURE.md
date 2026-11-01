@@ -6,7 +6,7 @@ This document details the internal design, directory layout, multiplatform compa
 
 ## 1. Design Philosophy
 
-StoryCraft Skills follows four immutable architectural pillars modeled after elite agent frameworks like `obra/superpowers`:
+StoryCraft Skills follows four immutable architectural pillars modeled after professional agent-first design patterns:
 
 1. **Pure Markdown Source of Truth**: All agent intelligence resides directly in human-readable, deterministic markdown files (`skills/*/SKILL.md`).
 2. **Zero Runtime Dependencies**: The skill suite operates without requiring external runtime dependencies, ensuring high portability across environments.

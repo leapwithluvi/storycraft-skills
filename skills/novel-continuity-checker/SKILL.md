@@ -94,9 +94,9 @@ In fiction, characters do not have video-game health bars that reset after a nig
 
 4. **Step 4: Generate Forensic Continuity Report**
    - Document all discrepancies using a standardized severity scale:
-     -  **Critical Breach**: Impossible physical action, resurrection of dead character, violation of core magic law.
-     - 🟡 **Moderate Discrepancy**: Forgotten injury, inventory teleportation, travel time error.
-     - 🟢 **Minor Drift**: Eye color mismatch, slight clothing change without scene transition, imprecise date.
+     - [CRITICAL] **Critical Breach**: Impossible physical action, resurrection of dead character, violation of core magic law.
+     - [MODERATE] **Moderate Discrepancy**: Forgotten injury, inventory teleportation, travel time error.
+     - [MINOR] **Minor Drift**: Eye color mismatch, slight clothing change without scene transition, imprecise date.
 
 5. **Step 5: Provide Direct Redline Corrections**
    - For every flagged issue, provide the exact sentence revision that reconciles the text with canon.
@@ -141,7 +141,7 @@ In fiction, characters do not have video-game health bars that reset after a nig
 > Elena smiled calmly and reached into her velvet evening bag. She pulled out the brass cipher key and handed it to the Duke. "Here is the key to the vault," she said.
 
 **Forensic Audit Findings:**
-> 🟡 **MODERATE INVENTORY BREACH:**  
+> [MODERATE] **MODERATE INVENTORY BREACH:**  
 > - In Chapter 10, Scene 3, Elena was arrested in the conservatory and had her evening bag, coat, and jewelry confiscated by the palace guards. She escaped from the cellar cell in Chapter 11 with only a stolen butter knife and a bedsheet.  
 > - The text never shows Elena retrieving her confiscated bag or recovering the cipher key from the guardroom.
 

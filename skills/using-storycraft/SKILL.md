@@ -9,7 +9,7 @@ tags: ["novel", "fiction", "meta", "orchestrator", "workflow", "router", "bootst
 
 # Overview & Purpose
 
-This meta-skill acts as the central conductor, autonomous workflow orchestrator, and master pipeline director of the entire StoryCraft ecosystem. Much like `using-superpowers` in software engineering agents, `using-storycraft` ensures that an AI agent never dives blindly into generating generic prose or ungrounded plots. Instead, it systematically assesses the author's current project lifecycle, inspects existing files (`story-state.md`, `story-bible.md`, `manuscript/`, and `docs/storycraft/`), and guides both author and agent to the single highest-leverage craft skill needed next.
+This meta-skill acts as the central conductor, autonomous workflow orchestrator, and master pipeline director of the entire StoryCraft ecosystem. Much like an autonomous pipeline conductor in agentic workflows, `using-storycraft` ensures that an AI agent never dives blindly into generating generic prose or ungrounded plots. Instead, it systematically assesses the author's current project lifecycle, inspects existing files (`story-state.md`, `story-bible.md`, `manuscript/`, and `docs/storycraft/`), and guides both author and agent to the single highest-leverage craft skill needed next.
 
 The agent uses this skill to:
 - Conduct an automated **Project Diagnostic Audit** upon opening a novel workspace.
